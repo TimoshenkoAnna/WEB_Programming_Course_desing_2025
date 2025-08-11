@@ -821,9 +821,9 @@ h2 {
 }
 
 @media all and (min-width: 1241px) {
-    .site-header, .promo, .goods, .products-title, .products-tab, .contacts, .site-footer {
-        max-width: 1176px;
-    }
+    .site-header, .main-site, .promo, .goods, .products-title, .products-tab, .contacts, .site-footer {
+    max-width: 1176px;
+}
     .nav-link {
         padding: 0 28px;
     }
@@ -1218,4 +1218,184 @@ h2 {
     font-weight: 500;
     font-style: normal;
     font-display: swap;
+}
+
+/*О МАГАЗИНЕ*/
+/* Стили для страницы магазина */
+
+.about-block {
+    margin-top: 28px;
+}
+
+.about-block h1 {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 10px 0 0;
+}
+
+.about-text {
+    margin-top: 40px;
+}
+
+.about-text p {
+    margin-top: 20px;
+}
+
+.about-text h3 {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.about-text ul {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.about-text ul li {
+    margin-top: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.about-text ul li::before {
+    content: "•";
+    color: #ad1d26;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.gallery {
+    margin-top: 58px;
+}
+
+.gallery-grid {
+    width: 100%;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: zoom-in;
+    background: #f4f4f5;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 350ms linear;
+}
+
+.photo:hover img {
+    transform: scale(1.05);
+}
+
+/* Адаптивность для "О магазине" */
+@media (min-width: 641px) {
+    .gallery-grid {
+        display: grid;
+        grid: "a c d" auto "a c e" auto "b c e" auto / auto auto auto;
+    }
+    .gallery-grid .photo:nth-child(1) { grid-area: a; }
+    .gallery-grid .photo:nth-child(2) { grid-area: b; }
+    .gallery-grid .photo:nth-child(3) { grid-area: c; }
+    .gallery-grid .photo:nth-child(4) { grid-area: d; }
+    .gallery-grid .photo:nth-child(5) { grid-area: e; }
+}
+
+@media (max-width: 1240px) {
+    .about-block {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .about-block h1 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .about-text {
+        margin-top: 20px;
+    }
+    .about-text h3 {
+        font-size: 16px;
+    }
+    .gallery {
+        margin-top: 38px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .gallery-grid {
+        margin-top: 22px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-block h1 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .about-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-block {
+        margin-top: 18px;
+    }
+    .gallery-scroll {
+        overflow-x: auto;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+    .gallery-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .gallery-grid::after {
+        content: "";
+        flex: 0 0 1px;
+    }
+    .photo {
+        height: 340px;
+        flex: 0 0 85%;
+    }
+}
+
+@media (max-width: 460px) {
+    .photo {
+        height: 240px;
+    }
+}
+
+@media (max-width: 380px) {
+    .photo {
+        height: 180px;
+    }
+}
+
+.main-site {
+    display: block;
+    max-width: 1176px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 1240px) {
+    .main-site {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
