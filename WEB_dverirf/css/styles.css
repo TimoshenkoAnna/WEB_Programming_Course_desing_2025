@@ -1399,3 +1399,83 @@ h2 {
         padding-right: 15px;
     }
 }
+
+/*Стили для страницы "Доставка и Замеры*/
+.delivery-info {
+    margin-top: 28px; 
+    padding-bottom: 28px;
+}
+
+.cart-wrap {
+    padding-top: 5px;
+}
+
+.cart-wrap h1 {
+    font-size: 30px;
+    font-weight: 700; 
+    line-height: 1.2; 
+}
+
+.delivery-content {
+    margin-top: 40px;
+}
+
+.delivery-content h1, 
+.delivery-content h2, 
+.delivery-content h3 { 
+    font-weight: 700; 
+}
+
+.delivery-content h1 { 
+    font-size: 30px; 
+    line-height: 32px; 
+    margin: 10px 0 0; 
+}
+.delivery-content h2 { 
+    font-size: 24px; 
+    line-height: 24px; 
+    margin-top: 30px; 
+}
+.delivery-content h3 { 
+    font-size: 18px; 
+    line-height: 22px; 
+    margin-top: 30px; 
+}
+
+.delivery-content ul { 
+    list-style: none; 
+    margin-top: 20px; 
+}
+.delivery-content ul li { 
+    margin-top: 10px; 
+}
+.delivery-content ul li::before { 
+    content: "• "; color: #ad1d26; 
+}
+
+/*Стили для таблиц */
+.table-container {
+    overflow: hidden; 
+    border: 1px solid #eaebed; 
+    border-radius: 8px;
+    margin-top: 20px; 
+    overflow-x: auto;
+}
+.delivery-content table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+.delivery-content table th, .delivery-content table td {
+    padding: 15px 25px; 
+    text-align: left;
+     border: none;
+    border-bottom: 1px solid #eaebed;
+}
+.delivery-content table th { 
+    background: #f4f4f5; 
+    font-weight: 600; 
+}
+.delivery-content table tr:last-child th,
+.delivery-content table tr:last-child td { 
+    border-bottom: none; 
+}
