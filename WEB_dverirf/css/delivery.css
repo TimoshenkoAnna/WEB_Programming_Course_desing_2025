@@ -1,5 +1,5 @@
 /* ОБЩИЕ СТИЛИ И СБРОС */
-a, body, button, div, footer, form, h1, h2, h3, header, html, iframe, li, main, nav, p, section, ul, table, tbody, tr, th, td {
+a, body, button, div, footer, h1, h2, h3, header, html, iframe, li, main, nav, p, section, ul, table, tbody, tr, th, td {
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,6 +16,7 @@ img {
     vertical-align: baseline;
     outline: 0;
     max-width: 100%;
+    height: auto;
 }
 
 body, html {
@@ -60,7 +61,7 @@ i {
     font-style: normal;
 }
 
-*, :focus, :hover, input:focus {
+*, :focus, :hover {
     outline: 0;
 }
 
@@ -72,25 +73,29 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-a, button, div, footer, form, header, input, li, main, section {
+a, button, div, footer, header, li, main, section {
     box-sizing: border-box;
-}
-
-input {
-    outline: 0;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    resize: none;
-    border: 0;
 }
 
 .phone-link:hover strong {
     color: #ad1d26;
 }
 
+h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
 h2 {
     font-size: 28px;
     line-height: 32px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 700;
 }
 
@@ -195,18 +200,6 @@ h2 {
     height: 32px;
 }
 
-.mobile-menu {
-    display: none;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-}
-
-.mobile-menu:hover svg path {
-    opacity: 0.5;
-    transition: all 250ms linear;
-}
-
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -304,56 +297,18 @@ h2 {
     color: #ad1d26;
 }
 
-.search {
-    position: relative;
-    margin: 0 28px 0 0;
-}
-
-.search-field {
-    background: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-size: 12px;
-    line-height: 0;
-    height: 32px;
-    padding: 0 40px 0 15px;
-    width: 196px;
-    transition: all 250ms linear;
-}
-
-.search-field:hover {
-    border-color: #babcc3;
-}
-
-.search-field:focus {
-    box-shadow: 0 0 0 2px rgba(186, 188, 195, 0.4);
-    border-color: #babcc3;
-}
-
-.search-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 40px;
-    opacity: 0.35;
-    transition: all 250ms linear;
-}
-
-.search-btn:hover {
-    opacity: 1;
-}
-
 .mobile-contact {
     display: none;
 }
 
-/* СТИЛИ КОНТЕНТА СТРАНИЦЫ "ДОСТАВКА И УСТАНОВКА" */
+/* СТИЛИ КОНТЕНТА СТРАНИЦЫ */
 .main-site {
-    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.center-wrapper {
     max-width: 1176px;
     margin-left: auto;
     margin-right: auto;
@@ -365,7 +320,7 @@ h2 {
 
 .page-content h1 {
     font-size: 30px;
-    line-height: 32px;
+    line-height: 1.2;
     font-weight: 700;
     margin: 10px 0 0;
 }
@@ -376,14 +331,14 @@ h2 {
 
 .page-content h2 {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1.2;
     margin-top: 30px;
     font-weight: 700;
 }
 
 .page-content h3 {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.3;
     margin-top: 30px;
     font-weight: 700;
 }
@@ -408,7 +363,6 @@ h2 {
 }
 
 .table-container {
-    overflow-x: auto;
     margin-top: 20px;
 }
 
@@ -437,10 +391,12 @@ h2 {
 .page-content table tr:last-child td {
     border-bottom: none;
 }
+
 .highlight {
-    color: #ad1d26; /* Changed to match the site's accent color */
+    color: #ad1d26;
     font-weight: 600;
 }
+
 .price-col {
     width: 25%;
 }
@@ -451,10 +407,8 @@ h2 {
     flex-wrap: nowrap;
     align-items: stretch;
     border-radius: 8px;
-    height: 581px;
     margin-top: 58px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 0;
 }
 
 .contact-info {
@@ -465,11 +419,11 @@ h2 {
     width: 45%;
     color: #fff;
     background: #313440;
-    height: 100%;
+    height: auto;
 }
 
 .contact-block {
-    padding: 30px 30px 30px 58px;
+    padding: 15px 15px 15px 30px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -478,28 +432,28 @@ h2 {
 
 .contact-block h2 {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .contact-item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 16px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .contact-item img {
-    width: 32px;
-    height: 33px;
+    width: 20px;
+    height: 21px;
 }
 
 .contact-item strong {
     display: block;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 9px;
+    line-height: 12px;
     opacity: 0.6;
 }
 
@@ -507,13 +461,13 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(100% - 48px);
+    width: calc(100% - 30px);
 }
 
 .contact-text .link, .contact-text .text {
-    font-size: 18px;
-    line-height: 22px;
-    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 3px;
 }
 
 .contact-text .link {
@@ -527,7 +481,7 @@ h2 {
 
 .map {
     width: 55%;
-    height: 100%;
+    height: 450px;
 }
 
 .map iframe {
@@ -543,8 +497,8 @@ h2 {
     justify-content: space-between;
     align-items: center;
     color: #7e8290;
-    padding: 0 58px 58px;
-    margin-top: 58px;
+    padding: 20px 58px 20px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -565,3 +519,444 @@ h2 {
 }
 
 /* АДАПТИВКА */
+
+/* Для экранов от 1241px */
+@media all and (min-width: 1241px) {
+    .site-header, .main-site, .contacts, .site-footer {
+        max-width: 1176px;
+    }
+    .nav-link {
+        padding: 0 28px;
+    }
+    .nav-link:hover,
+    .nav-dropdown:hover .nav-link {
+        background: #313440;
+        color: #fff;
+    }
+}
+
+/* Для экранов до 1240px */
+@media all and (max-width: 1240px) {
+    .site-header, .main-site, .contacts, .site-footer {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .header-right {
+        gap: 40px;
+    }
+    .phone-link strong {
+        font-size: 18px;
+    }
+    .header-nav {
+        height: 50px;
+    }
+    .header-nav nav a {
+        padding: 0 0 0 20px;
+    }
+    .header-nav nav a:hover {
+        color: #ad1d26;
+    }
+    .dropdown-content {
+        top: 50px;
+        padding: 20px;
+    }
+    .dropdown-grid .dropdown-card {
+        width: calc(25% - 8px);
+    }
+    .main-site, .contacts, .site-footer {
+        margin-top: 38px;
+    }
+    .page-content h1 {
+        font-size: 26px;
+    }
+    .page-content h2 {
+        font-size: 22px;
+    }
+    .contact-info {
+        width: 55%;
+    }
+    .map {
+        width: 45%;
+    }
+}
+
+/* Для экранов до 1000px */
+@media all and (max-width: 1000px) {
+    body {
+        padding-top: 86px;
+    }
+    .header-top {
+        padding: 20px 15px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        min-width: 320px;
+    }
+    .header-left {
+        gap: 30px;
+    }
+    .header-right {
+        gap: 20px;
+    }
+    .address p,
+    .phone-link strong {
+        display: none;
+    }
+    .mobile-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        background: #f4f4f5;
+        padding: 20px 15px;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+    .mobile-contact p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        color: #313440;
+    }
+    .mobile-contact p strong {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #313440;
+    }
+    .mobile-phone {
+        font-size: 20px;
+        font-weight: 600;
+        color: #ad1d26;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    .mobile-phone:hover {
+        color: #313440;
+    }
+    .main-site {
+        margin-top: 86px;
+    }
+    .page-content h1 {
+        font-size: 24px;
+    }
+    .contact-info {
+        width: 60%;
+    }
+    .map {
+        width: 40%;
+    }
+    .site-footer {
+        align-items: flex-start;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+    .copyright {
+        max-width: 70%;
+    }
+}
+
+/* Для экранов до 768px */
+@media all and (max-width: 768px) {
+    body, html {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    body {
+        padding-top: 80px;
+    }
+    .header-top {
+        padding: 15px;
+    }
+    .header-left {
+        gap: 20px;
+    }
+    .logo img {
+        width: 180px;
+        height: auto;
+    }
+    .header-right {
+        gap: 15px;
+    }
+    .main-site {
+        margin-top: 80px;
+    }
+    .page-content h1 {
+        font-size: 24px;
+    }
+    .page-content h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .page-content table {
+        border: none;
+        background-color: transparent;
+    }
+    .page-content table tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .page-content table th {
+        display: none;
+    }
+    .page-content table tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #eaebed;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .page-content table tbody tr:first-child {
+        display: none;
+    }
+    .page-content table td {
+        padding: 0;
+        border: none;
+        display: block;
+    }
+    .page-content table td:first-child {
+        font-weight: 500;
+        line-height: 1.4;
+        padding-right: 15px;
+    }
+    .page-content table td:last-child {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: right;
+        white-space: nowrap;
+    }
+    .page-content table tr.highlight {
+        border-color: #ad1d26;
+        background-color: #fff8f8;
+    }
+    .page-content table tr .highlight {
+        color: #ad1d26;
+        font-weight: 700;
+    }
+    .contacts {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .contact-info, .map {
+        width: 100%;
+        height: auto;
+    }
+    .map {
+        height: 400px;
+    }
+    .contact-block {
+        padding: 15px 15px 15px 30px;
+    }
+    .contact-block h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .contact-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .contact-item img {
+        width: 20px;
+        height: 21px;
+    }
+    .contact-item strong {
+        display: block;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 12px;
+        opacity: 0.6;
+    }
+    .contact-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc(100% - 30px);
+    }
+    .contact-text .link, .contact-text .text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 3px;
+    }
+    .contact-text .link {
+        text-decoration: none;
+        color: #fff;
+    }
+    .contact-text .link:hover {
+        color: #ad1d26;
+    }
+    .site-footer {
+        padding: 20px 15px 20px;
+        margin-top: 0;
+    }
+    .copyright {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-logo {
+        height: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Для экранов до 700px */
+@media all and (max-width: 700px) {
+    .slogan {
+        display: none;
+    }
+}
+
+/* Для экранов до 640px */
+@media all and (max-width: 640px) {
+    body {
+        padding-top: 76px;
+    }
+    .header-top {
+        padding: 15px;
+    }
+    .phone {
+        display: none;
+    }
+    .main-site {
+        margin-top: 76px;
+    }
+    .page-content h1 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+    .page-content h2 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    .dropdown-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow-x: auto;
+    }
+    .dropdown-grid .dropdown-card {
+        flex: 0 0 auto;
+        width: 45%;
+    }
+    .contact-text .link, .contact-text .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .site-footer {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+    .copyright {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .footer-logo {
+        margin-bottom: 20px;
+        height: 30px;
+    }
+}
+
+/* Для экранов до 460px */
+@media all and (max-width: 460px) {
+    .header-right {
+        gap: 12px;
+    }
+    .dropdown-grid .dropdown-card {
+        width: 65%;
+    }
+    .page-content h1 {
+        font-size: 22px;
+    }
+    .contact-block {
+        padding: 38px 25px 38px 30px;
+    }
+    .map {
+        height: 380px;
+    }
+}
+
+/* Для экранов до 320px */
+@media all and (max-width: 320px) {
+    body, html {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    body {
+        padding-top: 70px;
+    }
+    .header-top {
+        padding: 10px;
+    }
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+    .mobile-contact p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .mobile-phone {
+        font-size: 18px;
+    }
+    .main-site {
+        margin-top: 70px;
+    }
+    .page-content h1 {
+        font-size: 20px;
+    }
+    .page-content h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .contact-block {
+        padding: 20px 15px;
+    }
+    .contact-block h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .contact-item img {
+        width: 24px;
+        height: 24px;
+    }
+    .contact-text .link, .contact-text .text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .map {
+        height: 300px;
+    }
+    .site-footer {
+        padding: 20px 10px 20px;
+        margin-top: 0;
+    }
+    .copyright {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .footer-logo {
+        height: 25px;
+        margin-bottom: 15px;
+    }
+}

@@ -1,4 +1,3 @@
-/* ОБЩИЕ СТИЛИ И СБРОС */
 a, body, button, div, footer, form, h2, header, html, iframe, li, main, nav, p, section, ul {
     margin: 0;
     padding: 0;
@@ -196,16 +195,51 @@ h2 {
     height: 32px;
 }
 
-.mobile-menu {
-    display: none;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
+.search {
+    position: relative;
+    margin: 0 28px 0 0;
 }
 
-.mobile-menu:hover svg path {
-    opacity: 0.5;
+.search-field {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 0;
+    height: 32px;
+    padding: 0 40px 0 15px;
+    width: 196px;
     transition: all 250ms linear;
+}
+
+.search-field:hover {
+    border-color: #babcc3;
+}
+
+.search-field:focus {
+    box-shadow: 0 0 0 2px rgba(186, 188, 195, 0.4);
+    border-color: #babcc3;
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    opacity: 0.35;
+    transition: all 250ms linear;
+}
+
+.search-btn:hover {
+    opacity: 1;
+}
+
+.mobile-contact {
+    display: none;
 }
 
 /* --- Навигация хедера --- */
@@ -304,53 +338,6 @@ h2 {
 
 .dropdown-card:hover strong {
     color: #ad1d26;
-}
-
-.search {
-    position: relative;
-    margin: 0 28px 0 0;
-}
-
-.search-field {
-    background: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-size: 12px;
-    line-height: 0;
-    height: 32px;
-    padding: 0 40px 0 15px;
-    width: 196px;
-    transition: all 250ms linear;
-}
-
-.search-field:hover {
-    border-color: #babcc3;
-}
-
-.search-field:focus {
-    box-shadow: 0 0 0 2px rgba(186, 188, 195, 0.4);
-    border-color: #babcc3;
-}
-
-.search-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 40px;
-    opacity: 0.35;
-    transition: all 250ms linear;
-}
-
-.search-btn:hover {
-    opacity: 1;
-}
-
-.mobile-contact {
-    display: none;
 }
 
 /* ПРОМО-БЛОК (ГЛАВНЫЙ БАННЕР) */
@@ -643,10 +630,11 @@ h2 {
     flex-wrap: nowrap;
     align-items: stretch;
     border-radius: 8px;
-    height: 581px;
     margin-top: 58px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .contact-info {
@@ -657,11 +645,11 @@ h2 {
     width: 45%;
     color: #fff;
     background: #313440;
-    height: 100%;
+    height: auto;
 }
 
 .contact-block {
-    padding: 30px 30px 30px 58px;
+    padding: 15px 15px 15px 30px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -670,28 +658,28 @@ h2 {
 
 .contact-block h2 {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .contact-item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 16px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .contact-item img {
-    width: 32px;
-    height: 33px;
+    width: 20px;
+    height: 21px;
 }
 
 .contact-item strong {
     display: block;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 9px;
+    line-height: 12px;
     opacity: 0.6;
 }
 
@@ -699,13 +687,13 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(100% - 48px);
+    width: calc(100% - 30px);
 }
 
 .contact-text .link, .contact-text .text {
-    font-size: 18px;
-    line-height: 22px;
-    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 3px;
 }
 
 .contact-text .link {
@@ -719,7 +707,7 @@ h2 {
 
 .map {
     width: 55%;
-    height: 100%;
+    height: 450px;
 }
 
 .map iframe {
@@ -735,8 +723,8 @@ h2 {
     justify-content: space-between;
     align-items: center;
     color: #7e8290;
-    padding: 0 58px 58px;
-    margin-top: 58px;
+    padding: 20px 58px 20px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -758,3 +746,558 @@ h2 {
 
 /* АДАПТИВКА */
 
+/* Для экранов от 1001px */
+@media all and (min-width: 1001px) {
+    .dropdown-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.13);
+    }
+}
+
+/* Для экранов от 1241px */
+@media all and (min-width: 1241px) {
+    .site-header, .promo, .goods, .products-title, .products-tab, .contacts, .site-footer {
+        max-width: 1176px;
+    }
+    .nav-link {
+        padding: 0 28px;
+    }
+    .nav-link:hover,
+    .nav-dropdown:hover .nav-link {
+        background: #313440;
+        color: #fff;
+    }
+}
+
+/* Для экранов до 1240px */
+@media all and (max-width: 1240px) {
+    .site-header, .promo, .goods, .products, .contacts, .site-footer {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .products {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header-right {
+        gap: 40px;
+    }
+    .phone-link strong {
+        font-size: 18px;
+    }
+    .header-nav {
+        height: 50px;
+    }
+    .header-nav nav a {
+        padding: 0 0 0 20px;
+    }
+    .header-nav nav a:hover {
+        color: #ad1d26;
+    }
+    .dropdown-content {
+        top: 50px;
+        padding: 20px;
+    }
+    .dropdown-grid .dropdown-card {
+        width: calc(25% - 8px);
+    }
+    .search {
+        margin-right: 20px;
+    }
+    .promo {
+        margin-top: 15px;
+    }
+    .promo-banner {
+        height: auto;
+    }
+    .slider-prev {
+        left: -7px;
+    }
+    .slider-next {
+        right: -7px;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .goods, .contacts, .site-footer {
+        margin-top: 38px;
+    }
+    .dropdown-card strong,
+    .product-link strong {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .goods-grid, .dropdown-grid {
+        margin-top: 22px;
+    }
+    .products {
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+    .product-link picture {
+        height: 280px;
+    }
+    .price {
+        margin-top: 15px;
+    }
+    .contact-info {
+        width: 55%;
+    }
+    .map {
+        width: 45%;
+    }
+    .site-footer {
+        padding-bottom: 20px;
+    }
+}
+
+/* Для экранов до 1000px */
+@media all and (max-width: 1000px) {
+    .header-top {
+        padding: 20px 15px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        min-width: 320px;
+    }
+    .header-left {
+        gap: 30px;
+    }
+    .header-right {
+        gap: 20px;
+    }
+    .address p,
+    .phone-link strong,
+    .header-nav nav {
+        display: none;
+    }
+    .search {
+        margin: 0;
+        width: 100%;
+    }
+    .search-field {
+        width: 100%;
+        height: 36px;
+        font-size: 16px;
+        font-weight: 400;
+        border: 1px solid #eaebed;
+        border-radius: 6px;
+        padding: 0 45px 0 15px;
+    }
+    .search-btn {
+        width: 45px;
+    }
+    .mobile-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        background: #f4f4f5;
+        padding: 20px 15px;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+    .mobile-contact p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        color: #313440;
+    }
+    .mobile-contact p strong {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #313440;
+    }
+    .mobile-phone {
+        font-size: 20px;
+        font-weight: 600;
+        color: #ad1d26;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    .mobile-phone:hover {
+        color: #313440;
+    }
+    .promo {
+        margin-top: 86px;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .goods-card {
+        height: 180px;
+    }
+    .goods-card strong {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .goods-grid .goods-card {
+        width: calc(50% - 8px);
+    }
+    .dropdown-grid .dropdown-card {
+        width: calc(25% - 13px);
+    }
+    .slider {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .slide {
+        flex: 0 0 calc((100% - 12px) / 2);
+        max-width: 40%;
+    }
+    .slider-track {
+        padding-right: 15px;
+    }
+    .slider-prev, .slider-next {
+        display: none;
+    }
+    .product-link picture {
+        height: 260px;
+    }
+    .contact-info {
+        width: 60%;
+    }
+    .map {
+        width: 40%;
+    }
+    .site-footer {
+        align-items: flex-start;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+    .copyright {
+        max-width: 70%;
+    }
+}
+
+/* Для экранов до 768px (планшеты) */
+@media all and (max-width: 768px) {
+    body, html {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .header-top {
+        padding: 15px;
+    }
+    .header-left {
+        gap: 20px;
+    }
+    .logo img {
+        width: 180px;
+        height: auto;
+    }
+    .header-right {
+        gap: 15px;
+    }
+    .search-field {
+        height: 34px;
+        font-size: 14px;
+    }
+    .mobile-contact p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .mobile-phone {
+        font-size: 18px;
+    }
+    .promo {
+        margin-top: 80px;
+    }
+    .promo-banner {
+        height: 250px;
+    }
+    .goods {
+        margin-top: 40px;
+    }
+    .goods-card {
+        height: 170px;
+        width: calc(50% - 8px);
+    }
+    .goods-card strong {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .slide {
+        flex: 0 0 280px;
+        max-width: 280px;
+    }
+    .product-link picture {
+        height: 220px;
+    }
+    .product-link strong {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .price {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    .contacts {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .contact-info {
+        width: 100%;
+        height: auto;
+    }
+    .map {
+        width: 100%;
+        height: 400px;
+    }
+    .contact-block {
+        padding: 15px 15px 15px 30px;
+    }
+    .contact-block h2 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .contact-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .contact-item img {
+        width: 20px;
+        height: 21px;
+    }
+    .contact-item strong {
+        display: block;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 12px;
+        opacity: 0.6;
+    }
+    .contact-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc(100% - 30px);
+    }
+    .contact-text .link, .contact-text .text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 3px;
+    }
+    .contact-text .link {
+        text-decoration: none;
+        color: #fff;
+    }
+    .contact-text .link:hover {
+        color: #ad1d26;
+    }
+    .site-footer {
+        padding: 20px 15px 20px;
+        margin-top: 0;
+    }
+    .copyright {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-logo {
+        height: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Для экранов до 700px */
+@media all and (max-width: 700px) {
+    .slogan {
+        display: none;
+    }
+}
+
+/* Для экранов до 640px */
+@media all and (max-width: 640px) {
+    .site-header {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .header-top {
+        padding: 15px;
+    }
+    .phone {
+        display: none;
+    }
+    .promo,
+    .promo-banner,
+    .goods,
+    .contacts {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .products {
+        width: 100%;
+        margin-left: 0;
+        padding: 38px 15px;
+    }
+    .promo {
+        margin-top: 76px;
+    }
+    .promo-banner {
+        border-radius: 0;
+        background: transparent;
+        height: 100%;
+    }
+    .goods-card {
+        height: 160px;
+    }
+    .goods-card strong {
+        font-size: 15px;
+    }
+    .goods-grid {
+        gap: 10px;
+    }
+    .goods-grid .goods-card {
+        width: calc(50% - 5px);
+    }
+    .contacts {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .contact-info,
+    .map {
+        width: 100%;
+        height: auto;
+    }
+    .contact-text .link, .contact-text .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .site-footer {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+    .copyright {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-logo {
+        margin-bottom: 20px;
+        height: 30px;
+    }
+}
+
+/* Для экранов до 460px */
+@media all and (max-width: 460px) {
+    .header-right {
+        gap: 12px;
+    }
+    .slide {
+        flex: 0 0 280px;
+    }
+    .contact-block {
+        padding: 38px 25px 38px 30px;
+    }
+    .map {
+        height: 380px;
+    }
+}
+
+/* Для экранов до 320px (телефоны) */
+@media all and (max-width: 320px) {
+    body, html {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .header-top {
+        padding: 10px;
+    }
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+    .mobile-contact p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .mobile-phone {
+        font-size: 18px;
+    }
+    .search-field {
+        height: 32px;
+        font-size: 14px;
+    }
+    .promo {
+        margin-top: 70px;
+    }
+    .promo-banner {
+        height: 150px;
+    }
+    .goods {
+        margin-top: 30px;
+    }
+    .goods-card {
+        height: 140px;
+        width: calc(50% - 5px);
+    }
+    .goods-card strong {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .slide {
+        flex: 0 0 260px;
+    }
+    .product-link picture {
+        height: 200px;
+    }
+    .product-link strong {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .price {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .contact-block {
+        padding: 20px 15px;
+    }
+    .contact-block h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .contact-item img {
+        width: 24px;
+        height: 24px;
+    }
+    .contact-text .link, .contact-text .text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .map {
+        height: 300px;
+    }
+    .site-footer {
+        padding: 20px 10px 20px;
+        margin-top: 0;
+    }
+    .copyright {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .footer-logo {
+        height: 25px;
+        margin-bottom: 15px;
+    }
+}
