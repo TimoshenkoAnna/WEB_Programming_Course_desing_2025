@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Двери.рф - Каталог</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/catalog.css"> 
+    <link rel="stylesheet" href="css/burger-menu.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body class="page-inner">
+<header class="site-header">
+    <div class="header-top">
+        <div class="header-left">
+            <a href="index.html" class="logo">
+                <img src="img/dverlogo.png" alt="Логотип">
+            </a>
+            <p class="slogan">Межкомнатные, входные двери и фурнитура к ним</p>
+        </div>
+        <div class="header-right">
+            <a class="address">
+                <p>
+                    <strong>Волгоград</strong>
+                    <i>ул. Каннуникова д 6/1</i>
+                </p>
+            </a>
+            <div class="phone">
+                <a href="tel:+79880001030" class="phone-link">
+                    <strong><i>Звоните прямо сейчас:</i>+7 (988) 000-10-30</strong>
+                </a>
+            </div>
+            <div class="cart">
+                <img src="img/basket.png" width="32" height="32" alt="Иконка корзины">
+            </div>
+            <button class="mobile-menu">
+                <svg class="menu-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="16" fill="#313440"/>
+                    <path d="M9 11H23" stroke="white" stroke-width="2.1" stroke-linecap="round"/>
+                    <path d="M9 16H23" stroke="white" stroke-width="2.1" stroke-linecap="round"/>
+                    <path d="M9 21H23" stroke="white" stroke-width="2.1" stroke-linecap="round"/>
+                </svg>
+                <svg class="close-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <circle cx="16" cy="16" r="16" fill="#313440"/>
+                    <path d="M10 10L22 22M22 10L10 22" stroke="white" stroke-width="2.1" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="header-nav">
+        <nav>
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог товаров</a>
+            <div class="nav-dropdown">
+                <a href="magasin.html" class="nav-link">О магазине</a>
+                <div class="dropdown-content">
+                    <div class="dropdown-grid">
+                        <a href="zamery.html" class="dropdown-card"><strong>Как сделать замеры</strong></a>
+                        <a href="dostavka.html" class="dropdown-card"><strong>Доставка и установка</strong></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="nav-link">Регистрация</a>
+            <a href="" class="nav-link">Авторизация</a>
+        </nav>
+        <div class="mobile-contact">
+            <p><strong>Магазин дверей и фурнитуры</strong>
+            Адрес: Волгоград, ул. Каннуникова д 6/1</p>
+            <a href="tel:+79880001030" class="mobile-phone">+7 (988) 000-10-30</a>
+        </div>
+    </div>
+</header>
+
+<main class="main-site">
+    <section class="center-wrapper wrapper-type-2 cart-type-1">
+        <h1>Входные двери</h1>
+        <div class="catalog-wrapper-col-2">
+            <div class="catalog-nav">
+                <div class="catalog-nav-inner">
+                    <div class="catalog-filter maska">
+                        <form name="arrFilter_form" class="smartfilter filter-items br-s">
+                            <div class="catalog-filter-item">
+                                <strong class="title">С зеркалом внутри</strong>
+                                <div class="filter-item-type-wrapper" id="mirror-filter-container">
+                                </div>
+                            </div>
+                            <div class="catalog-filter-item">
+                                <strong class="title">Категории</strong>
+                                <div class="filter-item-type-wrapper" id="category-filter-container">
+                                </div>
+                            </div>
+                            <div class="filter-nav">
+                                <button id="del_filter" type="button" class="filter-button-type-2">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-products">
+                <div class="catalog-products-top">
+                    <div class="select-item">
+                        <div class="select-title">Сортировать:</div>
+                        <select class="js-example-basic-single sort_select required" name="Sorting" id="sort-select">
+                            <option value="">По умолчанию</option>
+                            <option value="price&_order=desc">Сначала дорогие</option>
+                            <option value="price&_order=asc">Сначала дешевые</option>
+                            <option value="name&_order=asc">По названию (А-Я)</option>
+                        </select>
+                    </div>
+
+                    <form class="search-form" id="search-form">
+                        <input type="search" id="search-input" class="search-input" placeholder="Поиск по названию...">
+                        <button type="submit" class="search-button" title="Искать">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path stroke="#313440" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M8.25 14.25a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM15.75 15.75l-3.263-3.263"/></svg>
+                        </button>
+                    </form>
+                </div>
+                
+                <div id="products-container" class="product-items-col-2x">
+                </div>
+
+                <div id="pagination-container" class="pagination">
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="contacts">
+    <div class="contact-info">
+        <div class="contact-block">
+            <h2>Как с нами связаться</h2>
+            <div class="contact-item">
+                <img src="img/call.png" alt="Звоните прямо сейчас">
+                <div class="contact-text">
+                    <strong>Звоните прямо сейчас:</strong>
+                    <a href="tel:+79880001030" class="link">+7 (844) 225-03-00</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <img src="img/adres.png" alt="Адрес">
+                <div class="contact-text">
+                    <strong>Адрес:</strong>
+                    <a href="https://yandex.by/maps/org/dveri_rf/137315023591/" target="_blank" rel="noreferrer" class="link">Волгоград, ул. Каннуникова д 6/1</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <img src="img/time.png" alt="Режим работы">
+                <div class="contact-text">
+                    <strong>Режим работы:</strong>
+                    <p class="text">ежедневно 9:00 - 19:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map" id="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A49112f921febb3eab4823caa26abcc51745a7bd7a9d0a32930407055296988db&amp;source=constructor"></iframe>
+    </div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="copyright">
+        <p>© 2005-2025. Интернет магазин «Двери.рф». <a>Входные и межкомнатные двери от производителя</a>. Материалы сайта защищены законом РФ об авторских и смежных правах. Копирование запрещено. Сайт не является договором оферты</p>
+    </div>
+    <img src="img/dverlogo.png" class="footer-logo" alt="Межкомнатные, входные двери и фурнитура к ним">
+</footer>
+<script src="js/catalog.js"></script>
+</body>
+</html>

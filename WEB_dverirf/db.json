@@ -1,0 +1,276 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Спец",
+      "price": 13100,
+      "image": "img/dver.webp",
+      "category": "Эконом",
+      "description": "Надежная и доступная входная дверь.",
+      "in_stock": true
+    },
+    {
+      "id": 2,
+      "name": "Оптима",
+      "price": 15500,
+      "image": "img/dver.webp",
+      "category": "Стандарт",
+      "description": "Оптимальное сочетание цены и качества.",
+      "in_stock": true
+    },
+    {
+      "id": 3,
+      "name": "Престиж",
+      "price": 21800,
+      "image": "img/dver.webp",
+      "category": "Премиум",
+      "description": "Элегантная дверь с повышенной шумоизоляцией.",
+      "in_stock": true
+    },
+    {
+      "id": 4,
+      "name": "Комфорт",
+      "price": 18900,
+      "image": "img/dver.webp",
+      "category": "Стандарт",
+      "description": "Дверь с дополнительным утеплением для вашего комфорта.",
+      "in_stock": false
+    },
+    {
+      "id": 5,
+      "name": "Модерн",
+      "price": 24500,
+      "image": "img/dver.webp",
+      "category": "Премиум",
+      "description": "Современный дизайн и передовые технологии защиты.",
+      "in_stock": true
+    },
+    {
+      "id": 6,
+      "name": "Классика",
+      "price": 19200,
+      "image": "img/dver.webp",
+      "category": "Стандарт",
+      "description": "Классический дизайн, который всегда в моде.",
+      "in_stock": true
+    },
+    {
+      "id": 7,
+      "name": "Лофт",
+      "price": 26300,
+      "image": "img/dver.webp",
+      "category": "Дизайнерские",
+      "description": "Идеальное решение для интерьеров в стиле лофт.",
+      "in_stock": true
+    },
+    {
+      "id": 8,
+      "name": "Бастион",
+      "price": 32000,
+      "image": "img/dver.webp",
+      "category": "Премиум",
+      "description": "Максимальная защита и взломостойкость.",
+      "in_stock": true
+    },
+    {
+      "id": 9,
+      "name": "Уют",
+      "price": 14200,
+      "image": "img/dver.webp",
+      "category": "Эконом",
+      "description": "Простая и уютная дверь для вашего дома.",
+      "in_stock": true
+    },
+    {
+      "id": 10,
+      "name": "Техно",
+      "price": 29800,
+      "image": "img/dver.webp",
+      "category": "Дизайнерские",
+      "description": "Высокотехнологичная дверь с современными элементами.",
+      "in_stock": false
+    },
+    {
+      "id": 11,
+      "name": "Гарда",
+      "price": 16100,
+      "image": "img/dver.webp",
+      "category": "Стандарт",
+      "description": "Надежная защита от шума и холода.",
+      "in_stock": true
+    },
+    {
+      "id": 12,
+      "name": "Норд",
+      "price": 22300,
+      "image": "img/dver.webp",
+      "category": "С терморазрывом",
+      "description": "Специальная дверь для суровых климатических условий.",
+      "in_stock": true
+    },
+    {
+      "id": 13,
+      "name": "Зеркало",
+      "price": 25900,
+      "image": "img/dver.webp",
+      "category": "С зеркалом",
+      "description": "Входная дверь с большим зеркалом на внутренней стороне.",
+      "in_stock": true
+    },
+    {
+      "id": 14,
+      "name": "Прованс",
+      "price": 21500,
+      "image": "img/dver.webp",
+      "category": "Дизайнерские",
+      "description": "Элегантность и шарм французского прованса.",
+      "in_stock": true
+    },
+    {
+      "id": 15,
+      "name": "Авангард",
+      "price": 28000,
+      "image": "img/dver.webp",
+      "category": "Премиум",
+      "description": "Смелый дизайн для современных интерьеров.",
+      "in_stock": true
+    },
+    {
+      "id": 16,
+      "name": "Эко",
+      "price": 13500,
+      "image": "img/dver.webp",
+      "category": "Эконом",
+      "description": "Экологичные материалы и доступная цена.",
+      "in_stock": true
+    },
+    {
+      "id": 17,
+      "name": "Сити",
+      "price": 17800,
+      "image": "img/dver.webp",
+      "category": "Стандарт",
+      "description": "Современная дверь для городской квартиры.",
+      "in_stock": true
+    },
+    {
+      "id": 18,
+      "name": "Кантри",
+      "price": 20500,
+      "image": "img/dver.webp",
+      "category": "Дизайнерские",
+      "description": "Дверь в стиле загородного дома.",
+      "in_stock": true
+    },
+    {
+      "id": 19,
+      "name": "Форте",
+      "price": 35000,
+      "image": "img/dver.webp",
+      "category": "Премиум",
+      "description": "Усиленная конструкция для максимальной безопасности.",
+      "in_stock": true
+    },
+    {
+      "id": 20,
+      "name": "Лайт",
+      "price": 12800,
+      "image": "img/dver.webp",
+      "category": "Эконом",
+      "description": "Легкая и экономичная дверь для технических помещений.",
+      "in_stock": false
+    },
+    {
+      "id": 21,
+      "name": "Гламур",
+      "price": 29500,
+      "image": "img/dver.webp",
+      "category": "С зеркалом",
+      "description": "Дверь с зеркалом и декоративными элементами.",
+      "in_stock": true
+    },
+    {
+      "id": 22,
+      "name": "Арктика",
+      "price": 24800,
+      "image": "img/dver.webp",
+      "category": "С терморазрывом",
+      "description": "Максимальная теплоизоляция для холодных регионов.",
+      "in_stock": true
+    },
+    {
+      "id": 23,
+      "name": "Венге",
+      "price": 19900,
+      "image": "img/dver.webp",
+      "category": "Стандарт",
+      "description": "Классическая отделка под темное дерево Венге.",
+      "in_stock": true
+    },
+    {
+      "id": 24,
+      "name": "Дуб",
+      "price": 20100,
+      "image": "img/dver.webp",
+      "category": "Стандарт",
+      "description": "Отделка под натуральный дуб.",
+      "in_stock": true
+    },
+    {
+      "id": 25,
+      "name": "Минимал",
+      "price": 23500,
+      "image": "img/dver.webp",
+      "category": "Дизайнерские",
+      "description": "Строгий и лаконичный дизайн без лишних деталей.",
+      "in_stock": true
+    },
+    {
+      "id": 26,
+      "name": "Стандарт Плюс",
+      "price": 16900,
+      "image": "img/dver.webp",
+      "category": "Стандарт",
+      "description": "Улучшенная версия стандартной двери с двумя замками.",
+      "in_stock": true
+    },
+    {
+      "id": 27,
+      "name": "Викинг",
+      "price": 31000,
+      "image": "img/dver.webp",
+      "category": "Премиум",
+      "description": "Мощная и надежная дверь со скандинавским дизайном.",
+      "in_stock": false
+    },
+    {
+      "id": 28,
+      "name": "Практик",
+      "price": 14900,
+      "image": "img/dver.webp",
+      "category": "Эконом",
+      "description": "Практичное и недорогое решение для квартиры.",
+      "in_stock": true
+    },
+    {
+      "id": 29,
+      "name": "Термо Плюс",
+      "price": 26500,
+      "image": "img/dver.webp",
+      "category": "С терморазрывом",
+      "description": "Дверь с тройным контуром уплотнения и терморазрывом.",
+      "in_stock": true
+    },
+    {
+      "id": 30,
+      "name": "Отражение",
+      "price": 27200,
+      "image": "img/dver.webp",
+      "category": "С зеркалом",
+      "description": "Элегантная дверь с зеркалом во весь рост.",
+      "in_stock": true
+    }
+  ],
+  "favorites": [],
+  "cart": []
+}
