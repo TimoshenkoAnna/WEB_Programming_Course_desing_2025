@@ -101,7 +101,7 @@ h2 {
     margin-right: auto;
 }
 
-/* --- Верхняя часть хедера --- */
+/* Верхняя часть хедера */
 .header-top {
     display: flex;
     flex-wrap: nowrap;
@@ -340,7 +340,7 @@ h2 {
     color: #ad1d26;
 }
 
-/* ПРОМО-БЛОК (ГЛАВНЫЙ БАННЕР) */
+/* ГЛАВНЫЙ БАННЕР */
 .promo {
     position: relative;
     margin-top: 30px;
@@ -364,7 +364,7 @@ h2 {
     border-radius: 8px;
 }
 
-/* СЕКЦИЯ "НАШИ ТОВАРЫ" */
+/* СЕКЦИЯ НАШИ ТОВАРЫ */
 .goods {
     margin-top: 58px;
     margin-left: auto;
@@ -446,7 +446,7 @@ h2 {
     opacity: 0.75;
 }
 
-/* СЕКЦИЯ "ПРОДУКТЫ" (СЛАЙДЕР) */
+/* СЕКЦИЯ ПРОДУКТЫ (СЛАЙДЕР) */
 .products {
     background: linear-gradient(180deg, #f4f4f5 0%, rgba(244, 244, 245, 0.5) 100%);
     padding: 52px 0;
@@ -624,7 +624,7 @@ h2 {
     filter: none;
 }
 
-/* СЕКЦИЯ "КОНТАКТЫ" */
+/* СЕКЦИЯ КОНТАКТЫ */
 .contacts {
     display: flex;
     flex-wrap: nowrap;
