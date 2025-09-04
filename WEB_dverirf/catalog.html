@@ -163,6 +163,30 @@
     </div>
     <img src="img/dverlogo.png" class="footer-logo" alt="Межкомнатные, входные двери и фурнитура к ним">
 </footer>
+
+<dialog class="modal" id="quick-view-modal">
+    <div class="modal-content">
+    </div>
+    <button class="modal-close-btn" aria-label="Закрыть окно">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+</dialog>
+
+<dialog class="modal" id="add-to-cart-modal">
+    <div class="modal-content-confirm">
+        <h3 class="modal-title">Товар добавлен в корзину!</h3>
+        <p class="modal-text">Вы можете продолжить покупки или перейти к оформлению заказа.</p>
+        <div class="modal-actions">
+            <button class="btn-secondary" id="continue-shopping-btn">Продолжить покупки</button>
+            <a href="cart.html" class="btn-primary">Перейти в корзину</a>
+        </div>
+    </div>
+</dialog>
+
+
+<script src="js/menu.js"></script>
+<script src="js/auth.js"></script>
 <script src="js/catalog.js"></script>
+
 </body>
 </html>

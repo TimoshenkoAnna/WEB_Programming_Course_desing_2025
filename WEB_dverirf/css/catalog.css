@@ -5,7 +5,7 @@ h1 {
     font-weight: 700;
     margin-bottom: 30px;
 }
-/* ЦЕНТРИРУЮЩИЙ КОНТЕЙНЕР ДЛЯ ОСНОВНОГО КОНТЕНТА */
+/* ЦЕНТРИРУЮЩИЙ КОНТЕЙНЕР */
 .center-wrapper {
     max-width: 1176px;    
     margin-left: auto;     
@@ -220,6 +220,7 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    cursor: pointer;
 }
 .product-card-top picture {
     display: block;
@@ -283,7 +284,38 @@ h1 {
     line-height: 1;
 }
 
-/* АДАПТИВКА */
+/* --- КНОПКА "В КОРЗИНУ" --- */
+.product-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.btn-add-to-cart {
+    background-color: #ad1d26;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #313440;
+    transform: scale(1.05);
+}
+
+.btn-add-to-cart:active {
+    transform: scale(0.98);
+} 
+
+/* --- АДАПТИВНОСТЬ --- */
 @media (max-width: 1000px) {
     .catalog-wrapper-col-2 {
         flex-direction: column;
@@ -294,6 +326,171 @@ h1 {
 }
 @media (max-width: 768px) {
     .product-card {
+        width: 100%;
+    }
+}
+
+/* ========== СТИЛИ ДЛЯ МОДАЛЬНЫХ ОКОН ========== */
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal[open]::backdrop {
+    opacity: 1;
+}
+
+.modal {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    width: 90%;
+    max-width: 680px;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal[open] {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+#add-to-cart-modal {
+    max-width: 450px;
+}
+
+.modal-content-confirm {
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.modal-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal-actions .btn-primary,
+.modal-actions .btn-secondary {
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-actions .btn-primary {
+    background-color: #ad1d26;
+    color: #fff;
+}
+.modal-actions .btn-primary:hover {
+    background-color: #313440;
+}
+
+.modal-actions .btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border-color: #ddd;
+}
+.modal-actions .btn-secondary:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}
+
+/* --- Окно быстрого просмотра --- */
+.modal-content {
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+}
+
+.quick-view-image {
+    width: 45%;
+    flex-shrink: 0;
+}
+.quick-view-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.quick-view-details {
+    display: flex;
+    flex-direction: column;
+}
+.quick-view-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+.quick-view-price {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ad1d26;
+    margin-bottom: 20px;
+}
+.quick-view-description {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s, background-color 0.2s;
+    z-index: 10;
+}
+.modal-close-btn:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+.modal-close-btn svg {
+    color: #313440;
+}
+
+/* --- Адаптивность модального окна --- */
+@media (max-width: 640px) {
+    .modal-content {
+        flex-direction: column;
+    }
+    .quick-view-image {
         width: 100%;
     }
 }
