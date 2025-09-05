@@ -10,12 +10,40 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/special.css"> <!-- Стили для слабовидящих -->
 </head>
 <body>
-    <body>
     <div class="preloader" id="preloader">
         <div class="loader"></div>
     </div>
+
+    <!-- Панель для слабовидящих -->
+    <div class="special-settings-panel" id="special-panel">
+        <div class="container">
+            <div class="special-settings">
+                <div class="setting-group">
+                    <span class="setting-label">Размер шрифта:</span>
+                    <button class="font-size-btn" data-size="normal">A</button>
+                    <button class="font-size-btn" data-size="medium">A+</button>
+                    <button class="font-size-btn" data-size="large">A++</button>
+                </div>
+                <div class="setting-group">
+                    <span class="setting-label">Цветовая схема:</span>
+                    <button class="color-scheme-btn" data-scheme="white-black">O</button>
+                    <button class="color-scheme-btn" data-scheme="black-white">O</button>
+                    <button class="color-scheme-btn" data-scheme="blue-darkblue">O</button>
+                </div>
+                <div class="setting-group">
+                    <span class="setting-label">Изображения:</span>
+                    <button id="toggle-images-btn">Вкл/Выкл</button>
+                </div>
+                <div class="setting-group">
+                    <button id="reset-settings-btn">Сбросить настройки</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 <header class="site-header">
     <div class="header-top">
@@ -57,6 +85,7 @@
         </div>
     </div>
     <div class="header-nav">
+        
         <nav>
             <a href="index.html" class="nav-link">Главная</a>
             <a href="catalog.html" class="nav-link">Каталог товаров</a>
@@ -64,8 +93,8 @@
                 <a href="magasin.html" class="nav-link">О магазине</a>
                 <div class="dropdown-content">
                     <div class="dropdown-grid">
-                        <a href="zamery.html" class="dropdown-card"><strong>Как сделать замеры</strong></a>
-                        <a href="dostavka.html" class="dropdown-card"><strong>Доставка и установка</strong></a>
+                        <a href="sizes.html" class="dropdown-card"><strong>Как сделать замеры</strong></a>
+                        <a href="delivery.html" class="dropdown-card"><strong>Доставка и установка</strong></a>
                     </div>
                 </div>
             </div>
@@ -74,6 +103,7 @@
 
             </div>
         </nav>
+        
         <div class="mobile-contact">
             <p><strong>Магазин дверей и фурнитуры</strong>
             Адрес: Волгоград, ул. Каннуникова д 6/1</p>
@@ -269,11 +299,12 @@
         </form>
     </div>
 </div>
-
+<script src="js/api.js"></script>
 <script src="js/preloader.js"></script>
 <script src="js/products.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/auth.js"></script>
+<script src="js/special.js"></script>
 </body>
 </html>

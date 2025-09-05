@@ -1,0 +1,202 @@
+/* --- Панель для слабовидящих --- */
+.special-settings-panel {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 1001;
+}
+
+.special-settings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1176px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.setting-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.setting-label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.font-size-btn, .color-scheme-btn, #toggle-images-btn, #reset-settings-btn {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.font-size-btn:hover, .color-scheme-btn:hover, #toggle-images-btn:hover, #reset-settings-btn:hover {
+    background-color: #e9e9e9;
+}
+
+.font-size-btn.active, .color-scheme-btn.active {
+    background-color: #313440;
+    color: white;
+    border-color: #313440;
+}
+
+
+/* --- ОБЩИЕ ТРЕБОВАНИЯ ДОСТУПНОСТИ --- */
+body.font-size-medium,
+body.font-size-large {
+    word-spacing: 0.16em;
+    letter-spacing: 0.12em;
+}
+
+body.font-size-medium p,
+body.font-size-large p {
+    line-height: 1.5;
+    margin-bottom: 2.25em;
+}
+
+
+/* --- СРЕДНИЙ РАЗМЕР ШРИФТА (125%) --- */
+body.font-size-medium { font-size: 20px; }
+body.font-size-medium h2 { font-size: 35px; line-height: 1.4; }
+body.font-size-medium .slogan { font-size: 15px; line-height: 1.4; }
+body.font-size-medium .address p { font-size: 18px; line-height: 1.4; }
+body.font-size-medium .phone-link strong { font-size: 27px; line-height: 1.3; }
+body.font-size-medium .phone-link strong i { font-size: 15px; }
+body.font-size-medium .nav-link,
+body.font-size-medium .dropdown-card strong { font-size: 19px; }
+body.font-size-medium .goods-card strong { font-size: 22px; line-height: 1.3; }
+body.font-size-medium .product-link strong { font-size: 20px; }
+body.font-size-medium .price { font-size: 22px; }
+body.font-size-medium .contact-text .link,
+body.font-size-medium .contact-text .text { font-size: 18px; line-height: 1.5; }
+body.font-size-medium .copyright { font-size: 16px; line-height: 1.5; }
+body.font-size-medium .contact-item strong { font-size: 16px; opacity: 1; }
+
+
+/* --- КРУПНЫЙ РАЗМЕР ШРИФТА (150%) --- */
+body.font-size-large { font-size: 24px; }
+body.font-size-large h2 { font-size: 42px; line-height: 1.4; }
+body.font-size-large .slogan { font-size: 18px; line-height: 1.4; }
+body.font-size-large .address p { font-size: 21px; line-height: 1.4; }
+body.font-size-large .phone-link strong { font-size: 33px; line-height: 1.3; }
+body.font-size-large .phone-link strong i { font-size: 18px; }
+body.font-size-large .nav-link,
+body.font-size-large .dropdown-card strong { font-size: 22px; }
+body.font-size-large .goods-card strong { font-size: 27px; line-height: 1.3; }
+body.font-size-large .product-link strong { font-size: 24px; }
+body.font-size-large .price { font-size: 27px; }
+body.font-size-large .contact-text .link,
+body.font-size-large .contact-text .text { font-size: 21px; line-height: 1.5; }
+body.font-size-large .copyright { font-size: 20px; line-height: 1.5; }
+body.font-size-large .contact-item strong { font-size: 20px; opacity: 1; }
+
+body.font-size-medium .header-top,
+body.font-size-large .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+body.font-size-medium .contact-block,
+body.font-size-large .contact-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+body.font-size-medium .contact-item,
+body.font-size-large .contact-item {
+    margin-top: 0;
+    align-items: flex-start;
+}
+
+body.font-size-medium .map,
+body.font-size-large .map {
+    height: auto;
+}
+
+/* --- Стили для цветовых схем --- */
+body.color-scheme-black-white { background-color: #000; color: #fff; }
+body.color-scheme-black-white .site-header,
+body.color-scheme-black-white .header-nav,
+body.color-scheme-black-white .product-card,
+body.color-scheme-black-white .contact-info,
+body.color-scheme-black-white .modal-content,
+body.color-scheme-black-white .goods-card {
+    background: #1a1a1a;
+    color: #fff;
+    border-color: #444;
+}
+body.color-scheme-black-white h2,
+body.color-scheme-black-white .nav-link,
+body.color-scheme-black-white .phone-link,
+body.color-scheme-black-white .address p {
+    color: #fff;
+}
+body.color-scheme-black-white a { color: #90cfff; }
+body.color-scheme-black-white a:hover { color: #cce6ff; }
+body.color-scheme-black-white .slogan { color: #ccc; }
+body.color-scheme-black-white .required { color: #ff8a8a; }
+
+body.color-scheme-blue-darkblue { background-color: #add8e6; color: #00008b; }
+body.color-scheme-blue-darkblue .site-header,
+body.color-scheme-blue-darkblue .header-nav,
+body.color-scheme-blue-darkblue .product-card,
+body.color-scheme-blue-darkblue .contact-info,
+body.color-scheme-blue-darkblue .modal-content,
+body.color-scheme-blue-darkblue .goods-card {
+    background: #a0c4d4;
+    color: #00008b;
+    border-color: #6a9fb4;
+}
+body.color-scheme-blue-darkblue a { color: #0000cd; }
+body.color-scheme-blue-darkblue a:hover { color: #000080; }
+body.color-scheme-blue-darkblue .slogan { color: #00008b; opacity: 0.8; }
+body.color-scheme-blue-darkblue .required { color: #b22222; }
+
+
+/* --- Стили для отключения изображений --- */
+body.images-disabled img,
+body.images-disabled picture {
+    display: none;
+}
+
+body.images-disabled .goods-card::after {
+    content: 'Входные двери';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    box-sizing: border-box;
+}
+
+body.images-disabled .product-link::before {
+    content: 'Изображение двери';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    box-sizing: border-box;
+}

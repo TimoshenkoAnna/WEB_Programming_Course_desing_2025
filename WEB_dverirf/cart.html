@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/catalog.css"> 
     <link rel="stylesheet" href="css/burger-menu.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
 
 <header class="site-header">
     <div class="header-top">
@@ -59,12 +64,14 @@
                 <a href="magasin.html" class="nav-link">О магазине</a>
                 <div class="dropdown-content">
                     <div class="dropdown-grid">
-                        <a href="zamery.html" class="dropdown-card"><strong>Как сделать замеры</strong></a>
-                        <a href="dostavka.html" class="dropdown-card"><strong>Доставка и установка</strong></a>
+                        <a href="sizes.html" class="dropdown-card"><strong>Как сделать замеры</strong></a>
+                        <a href="delivery.html" class="dropdown-card"><strong>Доставка и установка</strong></a>
                     </div>
                 </div>
             </div>
+
             <div id="user-nav-container">
+
             </div>
         </nav>
         <div class="mobile-contact">
@@ -96,9 +103,73 @@
         <button class="modal-close" data-close-modal>&times;</button>
         <h2>Регистрация</h2>
         <form id="register-form" novalidate>
+            <div class="form-group">
+                <label for="reg-lastname">Фамилия <span class="required">*</span></label>
+                <input type="text" id="reg-lastname" name="lastname" required>
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="reg-firstname">Имя <span class="required">*</span></label>
+                <input type="text" id="reg-firstname" name="firstname" required>
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="reg-middlename">Отчество</label>
+                <input type="text" id="reg-middlename" name="middlename">
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="reg-phone">Номер телефона <span class="required">*</span></label>
+                <input type="tel" id="reg-phone" name="phone" placeholder="+375 (XX) XXX-XX-XX" required>
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="reg-email">Email <span class="required">*</span></label>
+                <input type="email" id="reg-email" name="email" required>
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="reg-dob">Дата рождения <span class="required">*</span></label>
+                <input type="date" id="reg-dob" name="dob" required>
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group nickname-group">
+                <label for="reg-nickname">Ваш никнейм</label>
+                <input type="text" id="reg-nickname" name="nickname" readonly>
+                <button type="button" id="regenerate-nickname-btn" class="regenerate-btn">
+                    <img src="img/refresh.svg" alt="Сгенерировать новый">
+                </button>
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label>Способ задания пароля <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label><input type="radio" name="password-method" value="manual" checked> Ввести самостоятельно</label>
+                    <label><input type="radio" name="password-method" value="auto"> Сгенерировать</label>
+                </div>
+            </div>
+            <div id="manual-password-section">
+                <div class="form-group">
+                    <label for="reg-password">Пароль <span class="required">*</span></label>
+                    <input type="password" id="reg-password" name="password" required>
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password-confirm">Повторите пароль <span class="required">*</span></label>
+                    <input type="password" id="reg-password-confirm" name="password-confirm" required>
+                    <div class="error-message"></div>
+                </div>
+            </div>
+            <div class="form-group-checkbox">
+                <input type="checkbox" id="reg-agreement" name="agreement" required>
+                <label for="reg-agreement">Я прочитал(а) и принимаю <a href="#" target="_blank">Пользовательское соглашение</a> <span class="required">*</span></label>
+                <div class="error-message"></div>
+            </div>
+            <button type="submit" id="register-submit-btn" disabled>Зарегистрироваться</button>
         </form>
     </div>
 </div>
+
 <div class="modal-overlay" id="login-modal">
     <div class="modal-content">
         <button class="modal-close" data-close-modal>&times;</button>
@@ -119,6 +190,7 @@
     </div>
 </div>
 
+<script src="js/preloader.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/cart-page.js"></script>
