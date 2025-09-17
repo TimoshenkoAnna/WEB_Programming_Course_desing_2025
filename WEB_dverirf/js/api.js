@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000'; 
+const API_URL = 'http://localhost:3000';
 
 async function fetchProducts() {
     try {
@@ -6,11 +6,10 @@ async function fetchProducts() {
         if (!response.ok) {
             throw new Error('Не удалось загрузить товары');
         }
-        const products = await response.json();
-        return products;
+        return await response.json();
     } catch (error) {
         console.error(error);
-        return []; 
+        return [];
     }
 }
 
@@ -20,8 +19,7 @@ async function fetchUsers() {
         if (!response.ok) {
             throw new Error('Не удалось загрузить пользователей');
         }
-        const users = await response.json();
-        return users;
+        return await response.json();
     } catch (error) {
         console.error(error);
         return [];

@@ -1,0 +1,190 @@
+/* Стили для админ-панели */
+.main-site.admin-panel {
+    margin-top: 100px;
+}
+
+.admin-panel {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin-panel h1, .admin-panel h2 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Стили для контейнера таблицы */
+.table-container {
+    overflow-x: auto;
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text-color);
+}
+
+table thead {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+/* Стили для кнопок */
+.admin-btn, .action-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.admin-btn {
+    background-color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.admin-btn:hover {
+    background-color: #0056b3;
+}
+
+.action-btn.edit {
+    background-color: #ffc107;
+}
+
+.action-btn.edit:hover {
+    background-color: #e0a800;
+}
+
+.action-btn.delete {
+    background-color: #dc3545;
+}
+
+.action-btn.delete:hover {
+    background-color: #c82333;
+}
+
+/* Стили для ячейки с кнопками действий */
+#products-table td:last-child {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+/* Стили для модального окна */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: #fff;
+    color: #313440;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Кнопка закрытия модального окна */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: #313440;
+}
+
+/* Стили для формы в модальном окне */
+#product-form .form-group {
+    margin-bottom: 1rem;
+}
+
+#product-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #313440;
+}
+
+#product-form input[type="text"],
+#product-form input[type="number"],
+#product-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+}
+
+#product-form input:focus,
+#product-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#product-form .form-group-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#product-form .form-group-checkbox input {
+    margin-right: 10px;
+}
+
+#product-form .admin-btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 12px;
+}

@@ -1,3 +1,4 @@
+/* Общие стили переходов */
 a,
 button,
 .search-btn,
@@ -12,10 +13,12 @@ button,
     transition: all 0.3s ease-in-out;
 }
 
+/* Стили для логотипа */
 .logo:hover img {
     transform: scale(1.05);
 }
 
+/* Стили для адреса */
 .address {
     position: relative;
 }
@@ -39,10 +42,12 @@ button,
     color: #313440;
 }
 
+/* Стили для иконки корзины */
 .cart:hover img {
     transform: rotate(15deg) scale(1.1);
 }
 
+/* Стили для мобильного меню */
 .mobile-menu:hover {
     transform: scale(1.1);
 }
@@ -51,6 +56,7 @@ button,
     transform: scale(0.95);
 }
 
+/* Стили для навигационных ссылок */
 .nav-link {
     position: relative;
 }
@@ -76,6 +82,7 @@ button,
     background-color: #ad1d26;
 }
 
+/* Стили для выпадающей карточки */
 .dropdown-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.13);
@@ -85,6 +92,7 @@ button,
     color: #ad1d26;
 }
 
+/* Стили для промо-баннера */
 .promo-banner {
     overflow: hidden;
 }
@@ -93,6 +101,7 @@ button,
     transform: scale(1.03);
 }
 
+/* Стили для карточки товара */
 .goods-card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -110,6 +119,7 @@ button,
     opacity: 0.75;
 }
 
+/* Стили для карточки продукта */
 .product-card:hover {
     border-color: #babcc3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -123,6 +133,7 @@ button,
     color: #ad1d26;
 }
 
+/* Стили для кнопок слайдера */
 .slider-prev:active {
     transform: translate(-5px, -50%);
 }
@@ -168,10 +179,12 @@ button,
     filter: none;
 }
 
+/* Стили для ссылок в контактной информации */
 .contact-text .link:hover {
     color: #ad1d26;
 }
 
+/* Стили для ссылок в копирайте */
 .copyright a {
     position: relative;
     text-decoration: none;
@@ -195,6 +208,7 @@ button,
     transform-origin: bottom left;
 }
 
+/* Медиа-запросы для адаптивности */
 @media all and (min-width: 1241px) {
     .nav-link:hover,
     .nav-dropdown:hover .nav-link {

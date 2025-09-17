@@ -1,4 +1,4 @@
-/* ОБЩИЕ СТИЛИ И СБРОС */
+/* Сброс стилей и базовые настройки */
 a, body, button, div, footer, form, h1, h2, h3, header, html, iframe, p, section {
     margin: 0;
     padding: 0;
@@ -76,6 +76,7 @@ a, button, div, footer, header, section {
     color: #ad1d26;
 }
 
+/* Стили для заголовков */
 h1 {
     font-size: 32px;
     line-height: 36px;
@@ -94,7 +95,7 @@ h3 {
     font-weight: 600;
 }
 
-/* ХЕДЕР */
+/* Стили для шапки сайта */
 .site-header {
     position: relative;
     z-index: 10;
@@ -136,6 +137,7 @@ h3 {
     gap: 50px;
 }
 
+/* Стили для адреса */
 .address {
     display: flex;
     align-items: center;
@@ -163,6 +165,7 @@ h3 {
     border-color: #313440;
 }
 
+/* Стили для телефона */
 .phone {
     display: flex;
     gap: 12px;
@@ -195,6 +198,7 @@ h3 {
     height: 32px;
 }
 
+/* Стили для навигации */
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -296,7 +300,7 @@ h3 {
     display: none;
 }
 
-/* КОНТЕНТ */
+/* Стили для контента */
 .main-site {
     margin-left: auto;
     margin-right: auto;
@@ -322,7 +326,7 @@ h3 {
     margin: 20px 0;
 }
 
-/* СЕКЦИЯ "КОНТАКТЫ" */
+/* Стили для секции контактов */
 .contacts {
     display: flex;
     flex-wrap: nowrap;
@@ -414,7 +418,7 @@ h3 {
     border: 0;
 }
 
-/* ФУТЕР */
+/* Стили для футера */
 .site-footer {
     display: flex;
     flex-wrap: nowrap;
@@ -442,7 +446,7 @@ h3 {
     width: auto;
 }
 
-/* АДАПТИВКА */
+/* Адаптивность */
 
 /* Для экранов от 1241px */
 @media all and (min-width: 1241px) {

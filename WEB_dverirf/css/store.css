@@ -1,4 +1,4 @@
-/* ОБЩИЕ СТИЛИ И СБРОС */
+/* Общие стили и сброс */
 a, body, button, div, footer, h1, h2, h3, header, html, iframe, li, main, nav, p, section, ul, picture {
     margin: 0;
     padding: 0;
@@ -81,6 +81,7 @@ a, button, div, footer, header, li, main, section {
     color: #ad1d26;
 }
 
+/* Стили для заголовков */
 h1 {
     font-size: 30px;
     font-weight: 700;
@@ -99,7 +100,7 @@ h3 {
     font-weight: 700;
 }
 
-/* ХЕДЕР */
+/* Стили для шапки сайта */
 .site-header {
     position: relative;
     z-index: 10;
@@ -141,6 +142,7 @@ h3 {
     gap: 50px;
 }
 
+/* Стили для адреса */
 .address {
     display: flex;
     align-items: center;
@@ -168,6 +170,7 @@ h3 {
     border-color: #313440;
 }
 
+/* Стили для телефона */
 .phone {
     display: flex;
     gap: 12px;
@@ -200,6 +203,7 @@ h3 {
     height: 32px;
 }
 
+/* Стили для навигации */
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -301,7 +305,7 @@ h3 {
     display: none;
 }
 
-/* СТИЛИ КОНТЕНТА СТРАНИЦЫ */
+/* Стили контента страницы */
 .main-site {
     margin-left: auto;
     margin-right: auto;
@@ -359,7 +363,7 @@ h3 {
     font-weight: bold;
 }
 
-/* СЕКЦИЯ "ГАЛЕРЕЯ" */
+/* Секция "Галерея" */
 .gallery {
     margin-top: 58px;
 }
@@ -399,7 +403,7 @@ h3 {
     transform: scale(1.05);
 }
 
-/* СЕКЦИЯ "КОНТАКТЫ" */
+/* Секция "Контакты" */
 .contacts {
     display: flex;
     flex-wrap: nowrap;
@@ -490,7 +494,7 @@ h3 {
     border: 0;
 }
 
-/* ФУТЕР */
+/* Футер */
 .site-footer {
     display: flex;
     flex-wrap: nowrap;
@@ -518,7 +522,7 @@ h3 {
     width: auto;
 }
 
-/* АДАПТИВКА */
+/* Адаптивность */
 
 /* Для экранов от 1241px */
 @media all and (min-width: 1241px) {
@@ -539,7 +543,7 @@ h3 {
 @media (min-width: 641px) {
     .gallery-grid {
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "a c d"
             "a c e"
             "b c e";

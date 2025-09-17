@@ -1,3 +1,4 @@
+/* Стили для основного контейнера корзины */
 .cart-main {
     padding: 40px 0;
     background-color: #f9f9fa;
@@ -17,6 +18,7 @@
     font-weight: 700;
 }
 
+/* Стили для контейнера корзины */
 .cart-main .cart-container {
     background-color: #fff;
     border-radius: 8px;
@@ -24,6 +26,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+/* Стили для сообщений о пустой корзине или авторизации */
 .cart-main .cart-empty-message,
 .cart-main .cart-auth-message {
     text-align: center;
@@ -32,6 +35,7 @@
     padding: 40px 0;
 }
 
+/* Стили для элемента корзины */
 .cart-main .cart-item {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +89,7 @@
     gap: 10px;
 }
 
+/* Стили для кнопок количества */
 .cart-main .quantity-btn {
     width: 30px;
     height: 30px;
@@ -119,6 +124,7 @@
     text-align: right;
 }
 
+/* Стили для кнопки удаления */
 .cart-main .remove-item-btn {
     background: none;
     border: none;
@@ -134,6 +140,7 @@
     color: #ad1d26;
 }
 
+/* Стили для итогов корзины */
 .cart-main .cart-summary {
     margin-top: 30px;
     padding-top: 20px;
@@ -146,6 +153,7 @@
     font-weight: 700;
 }
 
+/* Стили для кнопки оформления заказа */
 .cart-main .checkout-btn {
     margin-top: 20px;
     background-color: #28a745;
@@ -161,7 +169,6 @@
 .cart-main .checkout-btn:hover {
     background-color: #218838;
 }
-
 
 /* Адаптивность для корзины */
 @media (max-width: 600px) {

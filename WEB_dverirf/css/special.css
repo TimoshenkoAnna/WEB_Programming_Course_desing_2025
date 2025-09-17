@@ -1,34 +1,40 @@
-/* --- Панель для слабовидящих --- */
-.special-settings-panel {
-    background-color: #f5f5f5;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-    z-index: 1001;
+/* Стили для нового выпадающего меню настроек */
+.accessibility-dropdown-content {
+    width: auto;
+    min-width: 280px;
+    padding: 20px;
+    right: 0;
+    left: auto;
 }
 
-.special-settings {
+.accessibility-dropdown-content .setting-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    max-width: 1176px;
-    margin: 0 auto;
-    padding: 0 15px;
+    margin-bottom: 15px;
 }
 
-.setting-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.accessibility-dropdown-content .setting-group:last-child {
+    margin-bottom: 0;
 }
 
-.setting-label {
+.accessibility-dropdown-content .setting-label {
     font-size: 14px;
     font-weight: 500;
+    margin-right: 15px;
 }
 
+.accessibility-dropdown-content .divider {
+    border: none;
+    border-top: 1px solid #eaebed;
+    margin: 15px 0;
+}
+
+.accessibility-dropdown-content #reset-settings-btn {
+    width: 100%;
+}
+
+/* Кнопки внутри выпадающего меню */
 .font-size-btn, .color-scheme-btn, #toggle-images-btn, #reset-settings-btn {
     border: 1px solid #ccc;
     background-color: #fff;
@@ -47,8 +53,7 @@
     border-color: #313440;
 }
 
-
-/* --- ОБЩИЕ ТРЕБОВАНИЯ ДОСТУПНОСТИ --- */
+/* Общие требования доступности */
 body.font-size-medium,
 body.font-size-large {
     word-spacing: 0.16em;
@@ -56,14 +61,25 @@ body.font-size-large {
 }
 
 body.font-size-medium p,
-body.font-size-large p {
+body.font-size-large p,
+body.font-size-medium .cart-item-price,
+body.font-size-large .cart-item-price,
+body.font-size-medium .cart-item-total,
+body.font-size-large .cart-item-total,
+body.font-size-medium .summary-total,
+body.font-size-large .summary-total,
+body.font-size-medium .cart-empty-message,
+body.font-size-large .cart-empty-message,
+body.font-size-medium .cart-auth-message,
+body.font-size-large .cart-auth-message {
     line-height: 1.5;
     margin-bottom: 2.25em;
+    max-width: 80ch;
 }
 
-
-/* --- СРЕДНИЙ РАЗМЕР ШРИФТА (125%) --- */
+/* Средний размер шрифта (125%) */
 body.font-size-medium { font-size: 20px; }
+body.font-size-medium h1 { font-size: 35px; line-height: 1.4; }
 body.font-size-medium h2 { font-size: 35px; line-height: 1.4; }
 body.font-size-medium .slogan { font-size: 15px; line-height: 1.4; }
 body.font-size-medium .address p { font-size: 18px; line-height: 1.4; }
@@ -78,10 +94,19 @@ body.font-size-medium .contact-text .link,
 body.font-size-medium .contact-text .text { font-size: 18px; line-height: 1.5; }
 body.font-size-medium .copyright { font-size: 16px; line-height: 1.5; }
 body.font-size-medium .contact-item strong { font-size: 16px; opacity: 1; }
+body.font-size-medium .cart-item-details a { font-size: 20px; }
+body.font-size-medium .cart-item-price { font-size: 20px; }
+body.font-size-medium .cart-item-total { font-size: 20px; }
+body.font-size-medium .summary-total { font-size: 20px; }
+body.font-size-medium .quantity-value { font-size: 18px; }
+body.font-size-medium .checkout-btn { font-size: 18px; }
+body.font-size-medium .remove-item-btn { font-size: 18px; }
+body.font-size-medium .cart-empty-message { font-size: 20px; }
+body.font-size-medium .cart-auth-message { font-size: 20px; }
 
-
-/* --- КРУПНЫЙ РАЗМЕР ШРИФТА (150%) --- */
+/* Крупный размер шрифта (150%) */
 body.font-size-large { font-size: 24px; }
+body.font-size-large h1 { font-size: 42px; line-height: 1.4; }
 body.font-size-large h2 { font-size: 42px; line-height: 1.4; }
 body.font-size-large .slogan { font-size: 18px; line-height: 1.4; }
 body.font-size-large .address p { font-size: 21px; line-height: 1.4; }
@@ -96,7 +121,17 @@ body.font-size-large .contact-text .link,
 body.font-size-large .contact-text .text { font-size: 21px; line-height: 1.5; }
 body.font-size-large .copyright { font-size: 20px; line-height: 1.5; }
 body.font-size-large .contact-item strong { font-size: 20px; opacity: 1; }
+body.font-size-large .cart-item-details a { font-size: 24px; }
+body.font-size-large .cart-item-price { font-size: 24px; }
+body.font-size-large .cart-item-total { font-size: 24px; }
+body.font-size-large .summary-total { font-size: 24px; }
+body.font-size-large .quantity-value { font-size: 22px; }
+body.font-size-large .checkout-btn { font-size: 22px; }
+body.font-size-large .remove-item-btn { font-size: 22px; }
+body.font-size-large .cart-empty-message { font-size: 24px; }
+body.font-size-large .cart-auth-message { font-size: 24px; }
 
+/* Исправления компоновки */
 body.font-size-medium .header-top,
 body.font-size-large .header-top {
     flex-direction: column;
@@ -123,28 +158,53 @@ body.font-size-large .map {
     height: auto;
 }
 
-/* --- Стили для цветовых схем --- */
+/* Стили для цветовых схем */
 body.color-scheme-black-white { background-color: #000; color: #fff; }
 body.color-scheme-black-white .site-header,
 body.color-scheme-black-white .header-nav,
 body.color-scheme-black-white .product-card,
 body.color-scheme-black-white .contact-info,
 body.color-scheme-black-white .modal-content,
-body.color-scheme-black-white .goods-card {
+body.color-scheme-black-white .goods-card,
+body.color-scheme-black-white .cart-main,
+body.color-scheme-black-white .cart-container,
+body.color-scheme-black-white .cart-item,
+body.color-scheme-black-white .cart-summary {
     background: #1a1a1a;
     color: #fff;
     border-color: #444;
 }
+body.color-scheme-black-white h1,
 body.color-scheme-black-white h2,
 body.color-scheme-black-white .nav-link,
 body.color-scheme-black-white .phone-link,
-body.color-scheme-black-white .address p {
+body.color-scheme-black-white .address p,
+body.color-scheme-black-white .cart-item-details a,
+body.color-scheme-black-white .cart-item-price,
+body.color-scheme-black-white .cart-item-total,
+body.color-scheme-black-white .summary-total,
+body.color-scheme-black-white .quantity-value,
+body.color-scheme-black-white .cart-empty-message,
+body.color-scheme-black-white .cart-auth-message {
     color: #fff;
 }
 body.color-scheme-black-white a { color: #90cfff; }
 body.color-scheme-black-white a:hover { color: #cce6ff; }
 body.color-scheme-black-white .slogan { color: #ccc; }
 body.color-scheme-black-white .required { color: #ff8a8a; }
+body.color-scheme-black-white .quantity-btn,
+body.color-scheme-black-white .checkout-btn,
+body.color-scheme-black-white .remove-item-btn {
+    background: #1a1a1a;
+    color: #fff;
+    border-color: #444;
+}
+body.color-scheme-black-white .quantity-btn:hover,
+body.color-scheme-black-white .checkout-btn:hover,
+body.color-scheme-black-white .remove-item-btn:hover {
+    background: #333;
+    color: #fff;
+}
 
 body.color-scheme-blue-darkblue { background-color: #add8e6; color: #00008b; }
 body.color-scheme-blue-darkblue .site-header,
@@ -152,18 +212,128 @@ body.color-scheme-blue-darkblue .header-nav,
 body.color-scheme-blue-darkblue .product-card,
 body.color-scheme-blue-darkblue .contact-info,
 body.color-scheme-blue-darkblue .modal-content,
-body.color-scheme-blue-darkblue .goods-card {
+body.color-scheme-blue-darkblue .goods-card,
+body.color-scheme-blue-darkblue .cart-main,
+body.color-scheme-blue-darkblue .cart-container,
+body.color-scheme-blue-darkblue .cart-item,
+body.color-scheme-blue-darkblue .cart-summary {
     background: #a0c4d4;
     color: #00008b;
     border-color: #6a9fb4;
+}
+body.color-scheme-blue-darkblue h1,
+body.color-scheme-blue-darkblue .cart-item-details a,
+body.color-scheme-blue-darkblue .cart-item-price,
+body.color-scheme-blue-darkblue .cart-item-total,
+body.color-scheme-blue-darkblue .summary-total,
+body.color-scheme-blue-darkblue .quantity-value,
+body.color-scheme-blue-darkblue .cart-empty-message,
+body.color-scheme-blue-darkblue .cart-auth-message {
+    color: #00008b;
 }
 body.color-scheme-blue-darkblue a { color: #0000cd; }
 body.color-scheme-blue-darkblue a:hover { color: #000080; }
 body.color-scheme-blue-darkblue .slogan { color: #00008b; opacity: 0.8; }
 body.color-scheme-blue-darkblue .required { color: #b22222; }
+body.color-scheme-blue-darkblue .quantity-btn,
+body.color-scheme-blue-darkblue .checkout-btn,
+body.color-scheme-blue-darkblue .remove-item-btn {
+    background: #a0c4d4;
+    color: #00008b;
+    border-color: #6a9fb4;
+}
+body.color-scheme-blue-darkblue .quantity-btn:hover,
+body.color-scheme-blue-darkblue .checkout-btn:hover,
+body.color-scheme-blue-darkblue .remove-item-btn:hover {
+    background: #8bb8cc;
+    color: #00008b;
+}
 
+body.color-scheme-black-green { background-color: #000; color: #00ff00; }
+body.color-scheme-black-green .site-header,
+body.color-scheme-black-green .header-nav,
+body.color-scheme-black-green .product-card,
+body.color-scheme-black-green .contact-info,
+body.color-scheme-black-green .modal-content,
+body.color-scheme-black-green .goods-card,
+body.color-scheme-black-green .cart-main,
+body.color-scheme-black-green .cart-container,
+body.color-scheme-black-green .cart-item,
+body.color-scheme-black-green .cart-summary {
+    background: #1a1a1a;
+    color: #00ff00;
+    border-color: #005500;
+}
+body.color-scheme-black-green h1,
+body.color-scheme-black-green .cart-item-details a,
+body.color-scheme-black-green .cart-item-price,
+body.color-scheme-black-green .cart-item-total,
+body.color-scheme-black-green .summary-total,
+body.color-scheme-black-green .quantity-value,
+body.color-scheme-black-green .cart-empty-message,
+body.color-scheme-black-green .cart-auth-message {
+    color: #00ff00;
+}
+body.color-scheme-black-green a { color: #90ee90; }
+body.color-scheme-black-green a:hover { color: #ffffff; }
+body.color-scheme-black-green .slogan { color: #00dd00; }
+body.color-scheme-black-green .quantity-btn,
+body.color-scheme-black-green .checkout-btn,
+body.color-scheme-black-green .remove-item-btn {
+    background: #1a1a1a;
+    color: #00ff00;
+    border-color: #005500;
+}
+body.color-scheme-black-green .quantity-btn:hover,
+body.color-scheme-black-green .checkout-btn:hover,
+body.color-scheme-black-green .remove-item-btn:hover {
+    background: #333;
+    color: #00ff00;
+}
 
-/* --- Стили для отключения изображений --- */
+body.color-scheme-beige-brown { background-color: #f5f5dc; color: #8b4513; }
+body.color-scheme-beige-brown .site-header,
+body.color-scheme-beige-brown .header-nav,
+body.color-scheme-beige-brown .product-card,
+body.color-scheme-beige-brown .contact-info,
+body.color-scheme-beige-brown .modal-content,
+body.color-scheme-beige-brown .goods-card,
+body.color-scheme-beige-brown .cart-main,
+body.color-scheme-beige-brown .cart-container,
+body.color-scheme-beige-brown .cart-item,
+body.color-scheme-beige-brown .cart-summary {
+    background: #eadebf;
+    color: #8b4513;
+    border-color: #d2b48c;
+}
+body.color-scheme-beige-brown h1,
+body.color-scheme-beige-brown .cart-item-details a,
+body.color-scheme-beige-brown .cart-item-price,
+body.color-scheme-beige-brown .cart-item-total,
+body.color-scheme-beige-brown .summary-total,
+body.color-scheme-beige-brown .quantity-value,
+body.color-scheme-beige-brown .cart-empty-message,
+body.color-scheme-beige-brown .cart-auth-message {
+    color: #8b4513;
+}
+body.color-scheme-beige-brown a { color: #a0522d; }
+body.color-scheme-beige-brown a:hover { color: #000000; }
+body.color-scheme-beige-brown .slogan { color: #8b4513; opacity: 0.8; }
+body.color-scheme-beige-brown .quantity-btn,
+body.color-scheme-beige-brown .checkout-btn,
+body.color-scheme-beige-brown .remove-item-btn {
+    background: #eadebf;
+    color: #8b4513;
+    border-color: #d2b48c;
+}
+body.color-scheme-beige-brown .quantity-btn:hover,
+body.color-scheme-beige-brown .checkout-btn:hover,
+body.color-scheme-beige-brown .remove-item-btn:hover {
+    background: #d2b48c;
+    color: #8b4513;
+}
+
+/* Стили для отключения изображений */
 body.images-disabled img,
 body.images-disabled picture {
     display: none;
@@ -187,6 +357,22 @@ body.images-disabled .goods-card::after {
 
 body.images-disabled .product-link::before {
     content: 'Изображение двери';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    box-sizing: border-box;
+}
+
+body.images-disabled .cart-item-img::before {
+    content: 'Изображение товара';
     display: flex;
     align-items: center;
     justify-content: center;

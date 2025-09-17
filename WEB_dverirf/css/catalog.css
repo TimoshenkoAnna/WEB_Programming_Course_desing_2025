@@ -1,57 +1,70 @@
-/* СТИЛИ ДЛЯ КАТАЛОГА И ФИЛЬТРОВ */
+/* Стили для заголовка */
 h1 {
     font-size: 30px;
     line-height: 32px;
     font-weight: 700;
     margin-bottom: 30px;
 }
-/* ЦЕНТРИРУЮЩИЙ КОНТЕЙНЕР */
+
+/* Стили для центрирующего контейнера */
 .center-wrapper {
-    max-width: 1176px;    
-    margin-left: auto;     
+    max-width: 1176px;
+    margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;     
+    padding-left: 15px;
     padding-right: 15px;
 }
+
 .wrapper-type-2 {
     margin-top: 28px;
 }
+
+/* Стили для двухколоночной раскладки каталога */
 .catalog-wrapper-col-2 {
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
     gap: 30px;
 }
+
 .catalog-nav {
     width: 306px;
     flex-shrink: 0;
 }
+
+/* Стили для фильтров каталога */
 .catalog-filter {
     border-radius: 8px;
     border: 1px solid #eaebed;
 }
+
 .catalog-filter-item {
     padding: 20px;
     border-top: 1px solid #eaebed;
 }
+
 .catalog-filter-item:first-child {
     border-top: none;
 }
+
 .catalog-filter-item .title {
     display: block;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 15px;
 }
+
 .filter-item-type-wrapper {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .filter-item-type-3 {
     position: relative;
     height: 24px;
 }
+
 .filter-item-type-3 input {
     position: absolute;
     opacity: 0;
@@ -62,6 +75,7 @@ h1 {
     cursor: pointer;
     margin: 0;
 }
+
 .filter-item-type-3 label {
     display: flex;
     align-items: center;
@@ -71,13 +85,16 @@ h1 {
     cursor: pointer;
     font-size: 14px;
 }
+
 .filter-item-type-3 label strong {
     font-weight: 500;
     transition: all 250ms linear;
 }
+
 .filter-item-type-3 label:hover strong {
     color: #ad1d26;
 }
+
 .filter-item-type-3 label::before {
     content: "";
     position: absolute;
@@ -89,6 +106,7 @@ h1 {
     border-radius: 2px;
     transition: all 150ms linear;
 }
+
 .filter-item-type-3 label::after {
     content: "";
     position: absolute;
@@ -101,13 +119,16 @@ h1 {
     opacity: 0;
     transition: all 150ms linear;
 }
+
 .filter-item-type-3 input:checked + label::before {
     background: #ad1d26;
     border-color: #ad1d26;
 }
+
 .filter-item-type-3 input:checked + label::after {
     opacity: 1;
 }
+
 .filter-nav {
     display: flex;
     position: sticky;
@@ -117,6 +138,7 @@ h1 {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+
 .filter-button-type-2 {
     border: 1px solid #ad1d26;
     height: 40px;
@@ -128,16 +150,18 @@ h1 {
     transition: all 250ms linear;
     cursor: pointer;
 }
+
 .filter-button-type-2:hover {
     color: #fff;
     border-color: #313440;
     background: #313440;
 }
+
+/* Стили для продуктов каталога */
 .catalog-products {
     width: calc(100% - 336px);
 }
 
-/* СОРТИРОВКА И ПОИСК */
 .catalog-products-top {
     display: flex;
     justify-content: space-between;
@@ -146,20 +170,25 @@ h1 {
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
+
 .select-item {
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
 .select-title {
     font-size: 14px;
     color: #7e8290;
 }
+
+/* Стили для формы поиска */
 .search-form {
     position: relative;
     display: flex;
     align-items: center;
 }
+
 .search-input {
     border: 1px solid #e0e0e0;
     border-radius: 6px;
@@ -169,11 +198,13 @@ h1 {
     font-size: 14px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .search-input:focus {
     outline: none;
     border-color: #ad1d26;
     box-shadow: 0 0 0 2px rgba(173, 29, 38, 0.2);
 }
+
 .search-button {
     position: absolute;
     right: 0;
@@ -189,16 +220,18 @@ h1 {
     opacity: 0.6;
     transition: opacity 0.3s ease;
 }
+
 .search-button:hover {
     opacity: 1;
 }
 
-/* СЕТКА КАРТОЧЕК ТОВАРОВ */
+/* Стили для сетки продуктов */
 .product-items-col-2x {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .product-card {
     width: calc(50% - 10px);
     display: flex;
@@ -210,10 +243,12 @@ h1 {
     text-align: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
 .product-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
+
 .product-card-top {
     text-decoration: none;
     color: inherit;
@@ -222,6 +257,7 @@ h1 {
     flex-grow: 1;
     cursor: pointer;
 }
+
 .product-card-top picture {
     display: block;
     width: 100%;
@@ -229,24 +265,27 @@ h1 {
     margin-bottom: 15px;
     overflow: hidden;
 }
+
 .product-card-top picture img {
     width: 100%;
     height: auto;
     max-height: 100%;
     object-fit: contain;
 }
+
 .product-card-top strong {
     font-size: 16px;
     line-height: 1.4;
     font-weight: 500;
 }
+
 .price-card {
     font-size: 18px;
     font-weight: 600;
     margin-top: 15px;
 }
 
-/* --- ПАГИНАЦИЯ --- */
+/* Стили для пагинации */
 .pagination {
     width: 100%;
     display: flex;
@@ -254,6 +293,7 @@ h1 {
     gap: 15px;
     margin: 40px 0;
 }
+
 .pagination-btn {
     display: inline-flex;
     align-items: center;
@@ -270,21 +310,23 @@ h1 {
     transition: all 0.3s ease;
     border: 1px solid #e0e0e0;
 }
+
 .pagination-btn:hover {
     background: #e8e8e8;
     transform: translateY(-1px);
 }
+
 .pagination-btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
     transform: none;
 }
+
 .pagination-btn .arrow {
     font-size: 18px;
     line-height: 1;
 }
 
-/* --- КНОПКА "В КОРЗИНУ" --- */
 .product-card-bottom {
     display: flex;
     justify-content: space-between;
@@ -293,6 +335,7 @@ h1 {
     gap: 10px;
 }
 
+/* Стили для кнопки добавления в корзину */
 .btn-add-to-cart {
     background-color: #ad1d26;
     color: #fff;
@@ -313,9 +356,9 @@ h1 {
 
 .btn-add-to-cart:active {
     transform: scale(0.98);
-} 
+}
 
-/* --- АДАПТИВНОСТЬ --- */
+/* Адаптивность для каталога */
 @media (max-width: 1000px) {
     .catalog-wrapper-col-2 {
         flex-direction: column;
@@ -324,14 +367,14 @@ h1 {
         width: 100%;
     }
 }
+
 @media (max-width: 768px) {
     .product-card {
         width: 100%;
     }
 }
 
-/* ========== СТИЛИ ДЛЯ МОДАЛЬНЫХ ОКОН ========== */
-
+/* Стили для модальных окон */
 .modal::backdrop {
     background-color: rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(4px);
@@ -404,6 +447,7 @@ h1 {
     background-color: #ad1d26;
     color: #fff;
 }
+
 .modal-actions .btn-primary:hover {
     background-color: #313440;
 }
@@ -413,13 +457,14 @@ h1 {
     color: #333;
     border-color: #ddd;
 }
+
 .modal-actions .btn-secondary:hover {
     background-color: #e0e0e0;
     border-color: #ccc;
 }
 
-/* --- Окно быстрого просмотра --- */
-.modal-content {
+/* Стили для окна быстрого просмотра */
+#quick-view-modal .modal-content {
     display: flex;
     gap: 25px;
     padding: 25px;
@@ -429,6 +474,7 @@ h1 {
     width: 45%;
     flex-shrink: 0;
 }
+
 .quick-view-image img {
     width: 100%;
     height: auto;
@@ -440,18 +486,21 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+
 .quick-view-title {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 15px;
 }
+
 .quick-view-price {
     font-size: 22px;
     font-weight: 600;
     color: #ad1d26;
     margin-bottom: 20px;
 }
+
 .quick-view-description {
     font-size: 15px;
     color: #333;
@@ -477,17 +526,19 @@ h1 {
     transition: transform 0.2s, background-color 0.2s;
     z-index: 10;
 }
+
 .modal-close-btn:hover {
     transform: scale(1.1);
     background-color: #f0f0f0;
 }
+
 .modal-close-btn svg {
     color: #313440;
 }
 
-/* --- Адаптивность модального окна --- */
+/* Адаптивность для окна быстрого просмотра */
 @media (max-width: 640px) {
-    .modal-content {
+    #quick-view-modal .modal-content {
         flex-direction: column;
     }
     .quick-view-image {

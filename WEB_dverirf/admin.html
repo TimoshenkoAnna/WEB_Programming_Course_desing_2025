@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель - Двери.рф</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/special.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/theme-init.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="img/dverlogo.png" alt="Логотип">
+                </a>
+                <p class="slogan">Межкомнатные, входные двери и фурнитура к ним</p>
+            </div>
+            <div class="header-right">
+                <a href="index.html" class="nav-link">Вернуться на сайт</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-site admin-panel">
+        <h1>Панель администратора</h1>
+
+        <section id="users-section">
+            <h2>Пользователи</h2>
+            <div class="table-container">
+                <table id="users-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Полное имя</th>
+                            <th>Никнейм</th>
+                            <th>Email</th>
+                            <th>Телефон</th>
+                            <th>Дата рождения</th>
+                            <th>Роль</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="products-section">
+            <h2>Товары</h2>
+            <button id="add-product-btn" class="admin-btn">Добавить новый товар</button>
+            <div class="table-container">
+                <table id="products-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Название (RU)</th>
+                            <th>Цена</th>
+                            <th>Категория</th>
+                            <th>В наличии</th>
+                            <th>С зеркалом</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div id="product-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" data-close-modal>&times;</button>
+            <h2 id="modal-title">Добавить товар</h2>
+            <form id="product-form">
+                <input type="hidden" id="product-id" name="id">
+                <div class="form-group">
+                    <label for="product-name-ru">Название (RU)</label>
+                    <input type="text" id="product-name-ru" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-name-en">Название (EN)</label>
+                    <input type="text" id="product-name-en" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Цена</label>
+                    <input type="number" id="product-price" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-category">Категория</label>
+                    <input type="text" id="product-category" required>
+                </div>
+                 <div class="form-group">
+                    <label for="product-image">Изображение (путь)</label>
+                    <input type="text" id="product-image" value="img/vdoor1.png" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-description-ru">Описание (RU)</label>
+                    <textarea id="product-description-ru" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-description-en">Описание (EN)</label>
+                    <textarea id="product-description-en" rows="3"></textarea>
+                </div>
+                <div class="form-group-checkbox">
+                    <label>
+                        <input type="checkbox" id="product-in-stock">
+                        В наличии
+                    </label>
+                </div>
+                <div class="form-group-checkbox">
+                    <label>
+                        <input type="checkbox" id="product-has-mirror">
+                        С зеркалом
+                    </label>
+                </div>
+                <button type="submit" class="admin-btn">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <div class="copyright">
+            <p>© 2005-2025. Интернет магазин «Двери.рф».</p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

@@ -2,13 +2,19 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Двери.рф - Доставка и установка</title>
+    <title data-i18n="deliveryPage.pageTitle">Двери.рф - Доставка и установка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/delivery.css">
     <link rel="stylesheet" href="css/burger-menu.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/special.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <script src="js/theme-init.js"></script>
 </head>
 <body>
     <div class="preloader" id="preloader">
@@ -21,18 +27,18 @@
             <a href="index.html" class="logo">
                 <img src="img/dverlogo.png" alt="Логотип">
             </a>
-            <p class="slogan">Межкомнатные, входные двери и фурнитура к ним</p>
+            <p class="slogan" data-i18n="headerSlogan">Межкомнатные, входные двери и фурнитура к ним</p>
         </div>
         <div class="header-right">
             <a class="address">
                 <p>
-                    <strong>Волгоград</strong>
-                    <i>ул. Каннуникова д 6/1</i>
+                    <strong data-i18n="headerCity">Волгоград</strong>
+                    <i data-i18n="headerStreet">ул. Каннуникова д 6/1</i>
                 </p>
             </a>
             <div class="phone">
                 <a href="tel:+79880001030" class="phone-link">
-                    <strong><i>Звоните прямо сейчас:</i>+7 (988) 000-10-30</strong>
+                    <strong><i data-i18n="headerCallToAction">Звоните прямо сейчас:</i>+7 (988) 000-10-30</strong>
                 </a>
             </div>
             <a href="cart.html" class="cart-link">
@@ -56,25 +62,55 @@
     </div>
     <div class="header-nav">
         <nav>
-            <a href="index.html" class="nav-link">Главная</a>
-            <a href="catalog.html" class="nav-link">Каталог товаров</a>
+            <a href="index.html" class="nav-link" data-i18n="navHome">Главная</a>
+            <a href="catalog.html" class="nav-link" data-i18n="navCatalog">Каталог товаров</a>
             <div class="nav-dropdown">
-                <a href="magasin.html" class="nav-link">О магазине</a>
+                <a href="store.html" class="nav-link" data-i18n="navAbout">О магазине</a>
                 <div class="dropdown-content">
-                    <div class="dropdown-grid">
-                        <a href="sizes.html" class="dropdown-card"><strong>Как сделать замеры</strong></a>
-                        <a href="delivery.html" class="dropdown-card"><strong>Доставка и установка</strong></a>
+                    <a href="delivery.html" class="nav-link dropdown-link" data-i18n="navDelivery">Доставка и установка</a>
+                </div>
+            </div>
+
+            <div id="nav-settings">
+                <div class="nav-dropdown nav-dropdown--simple">
+                    <a href="#" class="nav-link" data-i18n="navSettings">Настройки</a>
+                    <div class="dropdown-content accessibility-dropdown-content">
+                        <div class="setting-group">
+                            <span class="setting-label" data-i18n="settingsFontSize">Размер шрифта:</span>
+                            <button class="font-size-btn" data-size="normal">A</button>
+                            <button class="font-size-btn" data-size="medium">A+</button>
+                            <button class="font-size-btn" data-size="large">A++</button>
+                        </div>
+                        <div class="setting-group">
+                            <span class="setting-label" data-i18n="settingsColorScheme">Цветовая схема:</span>
+                            <button class="color-scheme-btn" data-scheme="white-black">O</button>
+                            <button class="color-scheme-btn" data-scheme="black-white">O</button>
+                            <button class="color-scheme-btn" data-scheme="blue-darkblue">O</button>
+                            <button class="color-scheme-btn" data-scheme="black-green">O</button>
+                            <button class="color-scheme-btn" data-scheme="beige-brown">O</button>
+                        </div>
+                        <div class="setting-group">
+                            <span class="setting-label" data-i18n="settingsImages">Изображения:</span>
+                            <button id="toggle-images-btn" data-i18n="settingsToggleImages">Вкл/Выкл</button>
+                        </div>
+                        <hr class="divider">
+                        <div class="setting-group">
+                            <button id="reset-settings-btn" data-i18n="settingsReset">Сбросить настройки</button>
+                        </div>
                     </div>
                 </div>
+                <button id="theme-toggle-btn" class="nav-link" data-i18n="navTheme">Тема</button>
+                <button id="translate-btn" class="nav-link" data-i18n="translateButton">Перевести</button>
             </div>
 
             <div id="user-nav-container">
 
             </div>
         </nav>
+        
         <div class="mobile-contact">
-            <p><strong>Магазин дверей и фурнитуры</strong>
-            Адрес: Волгоград, ул. Каннуникова д 6/1</p>
+            <p><strong data-i18n="mobileContactTitle">Магазин дверей и фурнитуры</strong>
+            <span data-i18n="mobileContactAddress">Адрес: Волгоград, ул. Каннуникова д 6/1</span></p>
             <a href="tel:+79880001030" class="mobile-phone">+7 (988) 000-10-30</a>
         </div>
     </div>
@@ -82,105 +118,106 @@
 
 <main class="main-site center-wrapper">
     <section class="page-content">
-        <h1>Доставка и установка межкомнатных и входных дверей</h1>
+        <h1 data-i18n="deliveryPage.mainTitle">Доставка и установка межкомнатных и входных дверей</h1>
         <div class="content-block">
-            <h2>Стоимость доставки</h2>
+            <h2 data-i18n="deliveryPage.deliveryCostTitle">Стоимость доставки</h2>
             <div class="table-container">
                 <table>
                     <tbody>
                     <tr>
-                        <th>Доставка</th>
-                        <th class="price-col">Стоимость</th>
+                        <th data-i18n="deliveryPage.tableHeaderService">Доставка</th>
+                        <th class="price-col" data-i18n="deliveryPage.tableHeaderCost">Стоимость</th>
                     </tr>
                     <tr>
-                        <td>по Волгограду</td>
-                        <td>2000 руб.</td>
+                        <td data-i18n="deliveryPage.inVolgograd">по Волгограду</td>
+                        <td data-i18n="deliveryPage.deliveryCostInCity">2000 руб.</td>
                     </tr>
                     <tr>
-                        <td class="highlight">по Волгограду при стоимости заказа от 30 000 руб.</td>
-                        <td class="highlight">бесплатно</td>
+                        <td class="highlight" data-i18n="deliveryPage.inVolgogradFrom30k">по Волгограду при стоимости заказа от 30 000 руб.</td>
+                        <td class="highlight" data-i18n="deliveryPage.free">бесплатно</td>
                     </tr>
                     <tr>
-                        <td>за пределы Волгограда</td>
-                        <td>договорная</td>
+                        <td data-i18n="deliveryPage.outsideVolgograd">за пределы Волгограда</td>
+                        <td data-i18n="deliveryPage.negotiable">договорная</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h3>Стоимость подъема на этаж</h3>
+            <h3 data-i18n="deliveryPage.liftCostTitle">Стоимость подъема на этаж</h3>
             <div class="table-container">
                 <table>
                     <tbody>
                     <tr>
-                        <th>Подъем</th>
-                        <th class="price-col">Стоимость</th>
+                        <th data-i18n="deliveryPage.tableHeaderLift">Подъем</th>
+                        <th class="price-col" data-i18n="deliveryPage.tableHeaderCost">Стоимость</th>
                     </tr>
                     <tr>
-                        <td>межкомнатные двери</td>
-                        <td>100 руб. / за этаж</td>
+                        <td data-i18n="deliveryPage.liftInterior">межкомнатные двери</td>
+                        <td data-i18n="deliveryPage.liftInteriorCost">100 руб. / за этаж</td>
                     </tr>
                     <tr>
-                        <td>входные двери до 80 кг</td>
-                        <td>300 руб. / за этаж</td>
+                        <td data-i18n="deliveryPage.liftEntranceUpTo80">входные двери до 80 кг</td>
+                        <td data-i18n="deliveryPage.liftEntranceUpTo80Cost">300 руб. / за этаж</td>
                     </tr>
                     <tr>
-                        <td>входные двери свыше 80 кг</td>
-                        <td>400 руб. / за этаж</td>
+                        <td data-i18n="deliveryPage.liftEntranceOver80">входные двери свыше 80 кг</td>
+                        <td data-i18n="deliveryPage.liftEntranceOver80Cost">400 руб. / за этаж</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h2>Установка дверей</h2>
+            <h2 data-i18n="deliveryPage.installationTitle">Установка дверей</h2>
             <ul>
-                <li>Установка входных дверей производится в день доставки;</li>
-                <li>Дата установки межкомнатных дверей прописывается в договоре и обычно установка происходит в пределах недели после доставки дверей на адрес;</li>
+                <li data-i18n="deliveryPage.installationInfo1">Установка входных дверей производится в день доставки;</li>
+                <li data-i18n="deliveryPage.installationInfo2">Дата установки межкомнатных дверей прописывается в договоре и обычно установка происходит в пределах недели после доставки дверей на адрес;</li>
             </ul>
 
             <div class="table-container">
                 <table>
                     <tbody>
                     <tr>
-                        <th>Установка</th>
-                        <th class="price-col">Стоимость</th>
+                        <th data-i18n="deliveryPage.tableHeaderInstallation">Установка</th>
+                        <th class="price-col" data-i18n="deliveryPage.tableHeaderCost">Стоимость</th>
                     </tr>
                     <tr>
-                        <td>межкомнатная дверь</td>
-                        <td>4000 руб.</td>
+                        <td data-i18n="deliveryPage.installationInterior">межкомнатная дверь</td>
+                        <td data-i18n="deliveryPage.installationCostInterior">4000 руб.</td>
                     </tr>
                     <tr>
-                        <td>входная дверь</td>
-                        <td>6000 руб.</td>
+                        <td data-i18n="deliveryPage.installationEntrance">входная дверь</td>
+                        <td data-i18n="deliveryPage.installationCostEntrance">6000 руб.</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
+    
     <section class="contacts">
         <div class="contact-info">
             <div class="contact-block">
-                <h2>Как с нами связаться</h2>
+                <h2 data-i18n="contactHeader">Как с нами связаться</h2>
                 <div class="contact-item">
                     <img src="img/call.png" alt="Звоните прямо сейчас">
                     <div class="contact-text">
-                        <strong>Звоните прямо сейчас:</strong>
+                        <strong data-i18n="headerCallToAction">Звоните прямо сейчас:</strong>
                         <a href="tel:+78442250300" class="link">+7 (844) 225-03-00</a>
                     </div>
                 </div>
                 <div class="contact-item">
                     <img src="img/adres.png" alt="Адрес">
                     <div class="contact-text">
-                        <strong>Адрес:</strong>
-                        <a href="https://yandex.by/maps/org/dveri_rf/137315023591/?from=mapframe&ll=44.500464%2C48.702016&z=10" target="_blank" rel="noreferrer" class="link">Волгоград, ул. Каннуникова д 6/1</a>
+                        <strong data-i18n="contactAddress">Адрес:</strong>
+                        <a href="https://yandex.by/maps/org/dveri_rf/137315023591/?from=mapframe&ll=44.500464%2C48.702016&z=10" target="_blank" rel="noreferrer" class="link" data-i18n="contactFullAddress">Волгоград, ул. Каннуникова д 6/1</a>
                     </div>
                 </div>
                 <div class="contact-item">
                     <img src="img/time.png" alt="Режим работы">
                     <div class="contact-text">
-                        <strong>Режим работы:</strong>
-                        <p class="text">ежедневно 9:00 - 19:00</p>
+                        <strong data-i18n="contactWorkingHours">Режим работы:</strong>
+                        <p class="text" data-i18n="contactDaily">ежедневно 9:00 - 19:00</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +230,7 @@
 
 <footer class="site-footer">
     <div class="copyright">
-        <p>© 2005-2025. Интернет магазин «Двери.рф». <a>Входные и межкомнатные двери от производителя</a>. Материалы сайта защищены законом РФ об авторских и смежных правах. Копирование запрещено. Сайт не является договором оферты</p>
+        <p data-i18n="footerCopyright">© 2005-2025. Интернет магазин «Двери.рф». Входные и межкомнатные двери от производителя. Материалы сайта защищены законом РФ об авторских и смежных правах. Копирование запрещено. Сайт не является договором оферты</p>
     </div>
     <img src="img/dverlogo.png" class="footer-logo" alt="Межкомнатные, входные двери и фурнитура к ним">
 </footer>
@@ -201,71 +238,82 @@
 <div class="modal-overlay" id="register-modal">
     <div class="modal-content">
         <button class="modal-close" data-close-modal>&times;</button>
-        <h2>Регистрация</h2>
+        <h2 data-i18n="authRegister">Регистрация</h2>
         <form id="register-form" novalidate>
             <div class="form-group">
-                <label for="reg-lastname">Фамилия <span class="required">*</span></label>
+                <label for="reg-lastname" data-i18n="formLastName">Фамилия</label> <span class="required">*</span>
                 <input type="text" id="reg-lastname" name="lastname" required>
                 <div class="error-message"></div>
             </div>
             <div class="form-group">
-                <label for="reg-firstname">Имя <span class="required">*</span></label>
+                <label for="reg-firstname" data-i18n="formFirstName">Имя</label> <span class="required">*</span>
                 <input type="text" id="reg-firstname" name="firstname" required>
                 <div class="error-message"></div>
             </div>
             <div class="form-group">
-                <label for="reg-middlename">Отчество</label>
+                <label for="reg-middlename" data-i18n="formMiddleName">Отчество</label>
                 <input type="text" id="reg-middlename" name="middlename">
                 <div class="error-message"></div>
             </div>
             <div class="form-group">
-                <label for="reg-phone">Номер телефона <span class="required">*</span></label>
+                <label for="reg-phone" data-i18n="formPhone">Номер телефона</label> <span class="required">*</span>
                 <input type="tel" id="reg-phone" name="phone" placeholder="+375 (XX) XXX-XX-XX" required>
                 <div class="error-message"></div>
             </div>
             <div class="form-group">
-                <label for="reg-email">Email <span class="required">*</span></label>
+                <label for="reg-email" data-i18n="formEmail">Email</label> <span class="required">*</span>
                 <input type="email" id="reg-email" name="email" required>
                 <div class="error-message"></div>
             </div>
             <div class="form-group">
-                <label for="reg-dob">Дата рождения <span class="required">*</span></label>
+                <label for="reg-dob" data-i18n="formDob">Дата рождения</label> <span class="required">*</span>
                 <input type="date" id="reg-dob" name="dob" required>
                 <div class="error-message"></div>
             </div>
             <div class="form-group nickname-group">
-                <label for="reg-nickname">Ваш никнейм</label>
+                <label for="reg-nickname" data-i18n="formNickname">Ваш никнейм</label>
                 <input type="text" id="reg-nickname" name="nickname" readonly>
-                <button type="button" id="regenerate-nickname-btn" class="regenerate-btn">
-                    <img src="img/refresh.svg" alt="Сгенерировать новый">
+                <button type="button" id="regenerate-nickname-btn" class="regenerate-btn" title="Сгенерировать новый">
+                    ↻
                 </button>
                 <div class="error-message"></div>
             </div>
             <div class="form-group">
-                <label>Способ задания пароля <span class="required">*</span></label>
+                <label data-i18n="formPasswordMethod">Способ задания пароля</label> <span class="required">*</span>
                 <div class="radio-group">
-                    <label><input type="radio" name="password-method" value="manual" checked> Ввести самостоятельно</label>
-                    <label><input type="radio" name="password-method" value="auto"> Сгенерировать</label>
+                    <label><input type="radio" name="password-method" value="manual" checked> <span data-i18n="formPassMethodManual">Ввести самостоятельно</span></label>
+                    <label><input type="radio" name="password-method" value="auto"> <span data-i18n="formPassMethodAuto">Сгенерировать</span></label>
                 </div>
             </div>
             <div id="manual-password-section">
                 <div class="form-group">
-                    <label for="reg-password">Пароль <span class="required">*</span></label>
+                    <label for="reg-password" data-i18n="formPassword">Пароль</label> <span class="required">*</span>
                     <input type="password" id="reg-password" name="password" required>
                     <div class="error-message"></div>
                 </div>
                 <div class="form-group">
-                    <label for="reg-password-confirm">Повторите пароль <span class="required">*</span></label>
+                    <label for="reg-password-confirm" data-i18n="formPasswordConfirm">Повторите пароль</label> <span class="required">*</span>
                     <input type="password" id="reg-password-confirm" name="password-confirm" required>
                     <div class="error-message"></div>
                 </div>
             </div>
+            <div id="auto-password-section" style="display: none;">
+                <div class="form-group">
+                    <label for="reg-password-auto" data-i18n="formGeneratedPassword">Сгенерированный пароль</label>
+                    <div class="password-wrapper">
+                        <input type="text" id="reg-password-auto" name="password-auto" readonly>
+                        <button type="button" id="toggle-password-btn" data-i18n-title="formTogglePasswordTitle" title="Показать/скрыть пароль">👁️</button>
+                        <button type="button" id="copy-password-btn" data-i18n="formCopyBtn" title="Копировать">Копировать</button>
+                    </div>
+                    <div class="info-message" data-i18n="formSavePasswordInfo">Обязательно сохраните этот пароль в надежном месте!</div>
+                </div>
+            </div>
             <div class="form-group-checkbox">
                 <input type="checkbox" id="reg-agreement" name="agreement" required>
-                <label for="reg-agreement">Я прочитал(а) и принимаю <a href="#" target="_blank">Пользовательское соглашение</a> <span class="required">*</span></label>
+                <label for="reg-agreement"><span data-i18n="formAgreement">Я прочитал(а) и принимаю</span> <a href="#" target="_blank" data-i18n="formUserAgreement">Пользовательское соглашение</a> <span class="required">*</span></label>
                 <div class="error-message"></div>
             </div>
-            <button type="submit" id="register-submit-btn" disabled>Зарегистрироваться</button>
+            <button type="submit" id="register-submit-btn" data-i18n="formSubmitRegister" disabled>Зарегистрироваться</button>
         </form>
     </div>
 </div>
@@ -273,26 +321,30 @@
 <div class="modal-overlay" id="login-modal">
     <div class="modal-content">
         <button class="modal-close" data-close-modal>&times;</button>
-        <h2>Авторизация</h2>
+        <h2 data-i18n="authLogin">Авторизация</h2>
         <form id="login-form" novalidate>
             <div class="form-group">
-                <label for="login-email">Email <span class="required">*</span></label>
+                <label for="login-email" data-i18n="formEmail">Email</label> <span class="required">*</span>
                 <input type="email" id="login-email" name="email" required>
                 <div class="error-message"></div>
             </div>
             <div class="form-group">
-                <label for="login-password">Пароль <span class="required">*</span></label>
+                <label for="login-password" data-i18n="formPassword">Пароль</label> <span class="required">*</span>
                 <input type="password" id="login-password" name="password" required>
                 <div class="error-message"></div>
             </div>
-            <button type="submit" id="login-submit-btn">Войти</button>
+            <button type="submit" id="login-submit-btn" data-i18n="formSubmitLogin">Войти</button>
         </form>
     </div>
 </div>
 
+<script src="js/i18n.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/api.js"></script>
 <script src="js/preloader.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/auth.js"></script>
+<script src="js/special.js"></script>
 
 </body>
 </html>

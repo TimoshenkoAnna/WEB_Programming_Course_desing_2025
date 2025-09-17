@@ -2,404 +2,636 @@
   "products": [
     {
       "id": 1,
-      "name": "Спец",
+      "name": {
+        "ru": "Спец",
+        "en": "Spets"
+      },
       "price": 13100,
-      "image": "img/vdoor1.png",
+      "image": "img/door1.png",
       "category": "Эконом",
-      "description": "Надежная и доступная входная дверь.",
-      "in_stock": true
+      "description": {
+        "ru": "Надежная и доступная входная дверь.",
+        "en": "A reliable and affordable entrance door."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 2,
-      "name": "Оптима",
+      "name": {
+        "ru": "Оптима",
+        "en": "Optima"
+      },
       "price": 15500,
-      "image": "img/vdoor3.png",
+      "image": "img/door2.png",
       "category": "Стандарт",
-      "description": "Оптимальное сочетание цены и качества.",
-      "in_stock": true
+      "description": {
+        "ru": "Оптимальное сочетание цены и качества.",
+        "en": "The optimal balance of price and quality."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 3,
-      "name": "Престиж",
+      "name": {
+        "ru": "Престиж",
+        "en": "Prestige"
+      },
       "price": 21800,
-      "image": "img/vdoor1.png",
+      "image": "img/door3.png",
       "category": "Премиум",
-      "description": "Элегантная дверь с повышенной шумоизоляцией.",
-      "in_stock": true
+      "description": {
+        "ru": "Элегантная дверь с повышенной шумоизоляцией.",
+        "en": "An elegant door with enhanced sound insulation."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 4,
-      "name": "Комфорт",
+      "name": {
+        "ru": "Комфорт",
+        "en": "Comfort"
+      },
       "price": 18900,
-      "image": "img/vdoor3.png",
+      "image": "img/door7.png",
       "category": "Стандарт",
-      "description": "Дверь с дополнительным утеплением для вашего комфорта.",
-      "in_stock": false
+      "description": {
+        "ru": "Дверь с дополнительным утеплением.",
+        "en": "A door with additional insulation."
+      },
+      "in_stock": false,
+      "has_mirror": false
     },
     {
       "id": 5,
-      "name": "Модерн",
+      "name": {
+        "ru": "Модерн",
+        "en": "Modern"
+      },
       "price": 24500,
-      "image": "img/vdoor1.png",
+      "image": "img/door5.png",
       "category": "Премиум",
-      "description": "Современный дизайн и передовые технологии защиты.",
-      "in_stock": true
+      "description": {
+        "ru": "Современный дизайн и технологии защиты.",
+        "en": "Modern design and protection technologies."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 6,
-      "name": "Классика",
+      "name": {
+        "ru": "Классика",
+        "en": "Classic"
+      },
       "price": 19200,
-      "image": "img/vdoor3.png",
+      "image": "img/door6.png",
       "category": "Стандарт",
-      "description": "Классический дизайн, который всегда в моде.",
-      "in_stock": true
+      "description": {
+        "ru": "Классический дизайн, который всегда в моде.",
+        "en": "A classic design that is always in fashion."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 7,
-      "name": "Лофт",
+      "name": {
+        "ru": "Лофт",
+        "en": "Loft"
+      },
       "price": 26300,
-      "image": "img/vdoor1.png",
+      "image": "img/door7.png",
       "category": "Дизайнерские",
-      "description": "Идеальное решение для интерьеров в стиле лофт.",
-      "in_stock": true
+      "description": {
+        "ru": "Идеальное решение для интерьеров в стиле лофт.",
+        "en": "The perfect solution for loft-style interiors."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 8,
-      "name": "Бастион",
+      "name": {
+        "ru": "Бастион",
+        "en": "Bastion"
+      },
       "price": 32000,
-      "image": "img/vdoor3.png",
+      "image": "img/door7.png",
       "category": "Премиум",
-      "description": "Максимальная защита и взломостойкость.",
-      "in_stock": true
+      "description": {
+        "ru": "Максимальная защита и взломостойкость.",
+        "en": "Maximum protection and burglary resistance."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 9,
-      "name": "Уют",
+      "name": {
+        "ru": "Уют",
+        "en": "Cozy"
+      },
       "price": 14200,
-      "image": "img/vdoor1.png",
+      "image": "img/door8.png",
       "category": "Эконом",
-      "description": "Простая и уютная дверь для вашего дома.",
-      "in_stock": true
+      "description": {
+        "ru": "Простая и уютная дверь для вашего дома.",
+        "en": "A simple and cozy door for your home."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 10,
-      "name": "Техно",
+      "name": {
+        "ru": "Техно",
+        "en": "Techno"
+      },
       "price": 29800,
-      "image": "img/vdoor3.png",
+      "image": "img/door9.png",
       "category": "Дизайнерские",
-      "description": "Высокотехнологичная дверь с современными элементами.",
-      "in_stock": false
+      "description": {
+        "ru": "Высокотехнологичная дверь с современными элементами.",
+        "en": "A high-tech door with modern elements."
+      },
+      "in_stock": false,
+      "has_mirror": false
     },
     {
       "id": 11,
-      "name": "Гарда",
+      "name": {
+        "ru": "Гарда",
+        "en": "Garda"
+      },
       "price": 16100,
-      "image": "img/vdoor1.png",
+      "image": "img/door10.png",
       "category": "Стандарт",
-      "description": "Надежная защита от шума и холода.",
-      "in_stock": true
+      "description": {
+        "ru": "Надежная защита от шума и холода.",
+        "en": "Reliable protection from noise and cold."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 12,
-      "name": "Норд",
+      "name": {
+        "ru": "Норд",
+        "en": "Nord"
+      },
       "price": 22300,
-      "image": "img/vdoor3.png",
+      "image": "img/door11.png",
       "category": "С терморазрывом",
-      "description": "Специальная дверь для суровых климатических условий.",
-      "in_stock": true
+      "description": {
+        "ru": "Специальная дверь для суровых климатических условий.",
+        "en": "A special door for harsh climatic conditions."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 13,
-      "name": "Зеркало",
+      "name": {
+        "ru": "Зеркало",
+        "en": "Mirror"
+      },
       "price": 25900,
-      "image": "img/vdoor1.png",
+      "image": "img/door12.png",
       "category": "С зеркалом",
-      "description": "Входная дверь с большим зеркалом на внутренней стороне.",
-      "in_stock": true
+      "description": {
+        "ru": "Входная дверь с большим зеркалом на внутренней стороне.",
+        "en": "Entrance door with a large mirror on the inside."
+      },
+      "in_stock": true,
+      "has_mirror": true
     },
     {
       "id": 14,
-      "name": "Прованс",
+      "name": {
+        "ru": "Прованс",
+        "en": "Provence"
+      },
       "price": 21500,
-      "image": "img/vdoor3.png",
+      "image": "img/door13.png",
       "category": "Дизайнерские",
-      "description": "Элегантность и шарм французского прованса.",
-      "in_stock": true
+      "description": {
+        "ru": "Элегантность и шарм французского прованса.",
+        "en": "The elegance and charm of French Provence."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 15,
-      "name": "Авангард",
+      "name": {
+        "ru": "Авангард",
+        "en": "Avant-garde"
+      },
       "price": 28000,
-      "image": "img/vdoor1.png",
+      "image": "img/door13.png",
       "category": "Премиум",
-      "description": "Смелый дизайн для современных интерьеров.",
-      "in_stock": true
+      "description": {
+        "ru": "Смелый дизайн для современных интерьеров.",
+        "en": "A bold design for modern interiors."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 16,
-      "name": "Эко",
+      "name": {
+        "ru": "Эко",
+        "en": "Eco"
+      },
       "price": 13500,
-      "image": "img/vdoor3.png",
+      "image": "img/door14.png",
       "category": "Эконом",
-      "description": "Экологичные материалы и доступная цена.",
-      "in_stock": true
+      "description": {
+        "ru": "Экологичные материалы и доступная цена.",
+        "en": "Eco-friendly materials and an affordable price."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 17,
-      "name": "Сити",
+      "name": {
+        "ru": "Сити",
+        "en": "City"
+      },
       "price": 17800,
-      "image": "img/vdoor1.png",
+      "image": "img/door15.png",
       "category": "Стандарт",
-      "description": "Современная дверь для городской квартиры.",
-      "in_stock": true
+      "description": {
+        "ru": "Современная дверь для городской квартиры.",
+        "en": "A modern door for a city apartment."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 18,
-      "name": "Кантри",
+      "name": {
+        "ru": "Кантри",
+        "en": "Country"
+      },
       "price": 20500,
-      "image": "img/vdoor3.png",
+      "image": "img/door16.png",
       "category": "Дизайнерские",
-      "description": "Дверь в стиле загородного дома.",
-      "in_stock": true
+      "description": {
+        "ru": "Дверь в стиле загородного дома.",
+        "en": "A country-style door."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 19,
-      "name": "Форте",
+      "name": {
+        "ru": "Форте",
+        "en": "Forte"
+      },
       "price": 35000,
-      "image": "img/vdoor1.png",
+      "image": "img/door17.png",
       "category": "Премиум",
-      "description": "Усиленная конструкция для максимальной безопасности.",
-      "in_stock": true
+      "description": {
+        "ru": "Усиленная конструкция для максимальной безопасности.",
+        "en": "Reinforced construction for maximum security."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 20,
-      "name": "Лайт",
+      "name": {
+        "ru": "Лайт",
+        "en": "Lite"
+      },
       "price": 12800,
-      "image": "img/vdoor3.png",
+      "image": "img/door18.png",
       "category": "Эконом",
-      "description": "Легкая и экономичная дверь для технических помещений.",
-      "in_stock": false
+      "description": {
+        "ru": "Легкая и экономичная дверь для технических помещений.",
+        "en": "A lightweight and economical door for technical rooms."
+      },
+      "in_stock": false,
+      "has_mirror": false
     },
     {
       "id": 21,
-      "name": "Гламур",
+      "name": {
+        "ru": "Гламур",
+        "en": "Glamour"
+      },
       "price": 29500,
-      "image": "img/vdoor1.png",
+      "image": "img/door19.png",
       "category": "С зеркалом",
-      "description": "Дверь с зеркалом и декоративными элементами.",
-      "in_stock": true
+      "description": {
+        "ru": "Дверь с зеркалом и декоративными элементами.",
+        "en": "A door with a mirror and decorative elements."
+      },
+      "in_stock": true,
+      "has_mirror": true
     },
     {
       "id": 22,
-      "name": "Арктика",
+      "name": {
+        "ru": "Арктика",
+        "en": "Arctic"
+      },
       "price": 24800,
-      "image": "img/vdoor3.png",
+      "image": "img/door20.png",
       "category": "С терморазрывом",
-      "description": "Максимальная теплоизоляция для холодных регионов.",
-      "in_stock": true
+      "description": {
+        "ru": "Максимальная теплоизоляция для холодных регионов.",
+        "en": "Maximum thermal insulation for cold regions."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 23,
-      "name": "Венге",
+      "name": {
+        "ru": "Венге",
+        "en": "Wenge"
+      },
       "price": 19900,
-      "image": "img/vdoor1.png",
+      "image": "img/door21.png",
       "category": "Стандарт",
-      "description": "Классическая отделка под темное дерево Венге.",
-      "in_stock": true
+      "description": {
+        "ru": "Классическая отделка под темное дерево Венге.",
+        "en": "Classic finish in dark Wenge wood."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 24,
-      "name": "Дуб",
+      "name": {
+        "ru": "Дуб",
+        "en": "Oak"
+      },
       "price": 20100,
-      "image": "img/vdoor3.png",
+      "image": "img/door22.png",
       "category": "Стандарт",
-      "description": "Отделка под натуральный дуб.",
-      "in_stock": true
+      "description": {
+        "ru": "Отделка под натуральный дуб.",
+        "en": "Natural oak finish."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 25,
-      "name": "Минимал",
+      "name": {
+        "ru": "Минимал",
+        "en": "Minimal"
+      },
       "price": 23500,
-      "image": "img/vdoor1.png",
+      "image": "img/door23.png",
       "category": "Дизайнерские",
-      "description": "Строгий и лаконичный дизайн без лишних деталей.",
-      "in_stock": true
+      "description": {
+        "ru": "Строгий и лаконичный дизайн без лишних деталей.",
+        "en": "A strict and concise design with no extra details."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 26,
-      "name": "Стандарт Плюс",
+      "name": {
+        "ru": "Стандарт Плюс",
+        "en": "Standard Plus"
+      },
       "price": 16900,
-      "image": "img/vdoor3.png",
+      "image": "img/door24.png",
       "category": "Стандарт",
-      "description": "Улучшенная версия стандартной двери с двумя замками.",
-      "in_stock": true
+      "description": {
+        "ru": "Улучшенная версия стандартной двери с двумя замками.",
+        "en": "An improved version of the standard door with two locks."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 27,
-      "name": "Викинг",
+      "name": {
+        "ru": "Викинг",
+        "en": "Viking"
+      },
       "price": 31000,
-      "image": "img/vdoor1.png",
+      "image": "img/door25.png",
       "category": "Премиум",
-      "description": "Мощная и надежная дверь со скандинавским дизайном.",
-      "in_stock": false
+      "description": {
+        "ru": "Мощная и надежная дверь со скандинавским дизайном.",
+        "en": "A powerful and reliable door with a Scandinavian design."
+      },
+      "in_stock": false,
+      "has_mirror": false
     },
     {
       "id": 28,
-      "name": "Практик",
+      "name": {
+        "ru": "Практик",
+        "en": "Praktik"
+      },
       "price": 14900,
-      "image": "img/vdoor3.png",
+      "image": "img/door26.png",
       "category": "Эконом",
-      "description": "Практичное и недорогое решение для квартиры.",
-      "in_stock": true
+      "description": {
+        "ru": "Практичное и недорогое решение для квартиры.",
+        "en": "A practical and inexpensive solution for an apartment."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 29,
-      "name": "Термо Плюс",
+      "name": {
+        "ru": "Термо Плюс",
+        "en": "Thermo Plus"
+      },
       "price": 26500,
-      "image": "img/vdoor1.png",
+      "image": "img/door1.png",
       "category": "С терморазрывом",
-      "description": "Дверь с тройным контуром уплотнения и терморазрывом.",
-      "in_stock": true
+      "description": {
+        "ru": "Дверь с тройным контуром уплотнения и терморазрывом.",
+        "en": "A door with a triple sealing circuit and a thermal break."
+      },
+      "in_stock": true,
+      "has_mirror": false
     },
     {
       "id": 30,
-      "name": "Отражение",
+      "name": {
+        "ru": "Отражение",
+        "en": "Reflection"
+      },
       "price": 27200,
-      "image": "img/vdoor3.png",
+      "image": "img/door28.png",
       "category": "С зеркалом",
-      "description": "Элегантная дверь с зеркалом во весь рост.",
-      "in_stock": true
+      "description": {
+        "ru": "Элегантная дверь с зеркалом во весь рост.",
+        "en": "An elegant door with a full-length mirror."
+      },
+      "in_stock": true,
+      "has_mirror": true
     }
   ],
   "users": [
     {
-      "id": "1",
-      "fullName": "Администратор Сайта",
-      "nickname": "Admin",
-      "email": "admin@example.com",
-      "phone": "+375 (29) 111-11-11",
-      "birthDate": "1990-01-01",
-      "role": "admin",
-      "password": "AdminPassword1!"
-    },
-    {
-      "id": "2",
-      "fullName": "Петров Иван Сергеевич",
-      "nickname": "Ivan_P",
-      "email": "ivan@example.com",
-      "phone": "+375 (29) 222-22-22",
-      "birthDate": "1995-05-10",
-      "role": "customer",
-      "password": "Password123!"
-    },
-    {
-      "id": "3",
-      "fullName": "Сидорова Елена Васильевна",
-      "nickname": "Elena_S",
-      "email": "elena@example.com",
-      "phone": "+375 (33) 333-33-33",
-      "birthDate": "1998-08-15",
-      "role": "customer",
-      "password": "Password123!"
-    },
-    {
-      "id": "4",
-      "fullName": "Кузнецов Сергей Петрович",
-      "nickname": "Sergey_K",
-      "email": "sergey@example.com",
-      "phone": "+375 (44) 444-44-44",
-      "birthDate": "1988-11-20",
-      "role": "customer",
-      "password": "Password123!"
-    },
-    {
-      "id": "5",
-      "fullName": "Михайлова Анна Владимировна",
-      "nickname": "Anna_M",
-      "email": "anna@example.com",
-      "phone": "+375 (29) 555-55-55",
-      "birthDate": "2000-01-30",
-      "role": "customer",
-      "password": "Password123!"
-    },
-    {
-      "id": "6",
-      "fullName": "Федоров Дмитрий Игоревич",
-      "nickname": "Dmitry_F",
-      "email": "dmitry@example.com",
-      "phone": "+375 (33) 666-66-66",
-      "birthDate": "1993-03-12",
-      "role": "customer",
-      "password": "Password123!"
-    },
-    {
-      "id": "7",
-      "fullName": "Васильева Ольга Николаевна",
-      "nickname": "Olga_V",
-      "email": "olga@example.com",
-      "phone": "+375 (44) 777-77-77",
-      "birthDate": "1991-07-07",
-      "role": "customer",
-      "password": "Password123!"
-    },
-    {
-      "id": "8",
-      "fullName": "Зайцев Андрей Борисович",
-      "nickname": "Andrey_Z",
-      "email": "andrey@example.com",
-      "phone": "+375 (29) 888-88-88",
-      "birthDate": "1985-12-25",
-      "role": "customer",
-      "password": "Password123!"
-    },
-    {
-      "id": "9",
-      "fullName": "Павлова Ирина Викторовна",
-      "nickname": "Irina_P",
-      "email": "irina@example.com",
-      "phone": "+375 (33) 999-99-99",
-      "birthDate": "1999-02-18",
-      "role": "customer",
-      "password": "Password123!"
-    },
-    {
-      "id": "10",
-      "fullName": "Новиков Максим Евгеньевич",
-      "nickname": "Maxim_N",
-      "email": "maxim@example.com",
-      "phone": "+375 (44) 101-01-01",
-      "birthDate": "1997-09-09",
-      "role": "customer",
-      "password": "Password123!"
-    },
-    {
-      "fullName": "Иванов Иван",
-      "nickname": "Искусный_Профи_130",
+      "fullName": "Иванов Иван Иванович",
+      "nickname": "Крепкий_Мастер_283",
       "email": "ivan@gmail.com",
       "phone": "+375 (33) 346-87-12",
-      "birthDate": "2003-02-05",
-      "password": "50$tyy@t^Etp",
+      "birthDate": "1999-12-28",
+      "password": "o^m^4!Lk5HL&",
       "role": "customer",
-      "id": "ALaZ0ZQ"
+      "id": 1
+    },
+    {
+      "fullName": "Яковлева Ангелина Петровна",
+      "nickname": "AngelinaYakovleva_967",
+      "email": "a@gmail.com",
+      "phone": "+375 (33) 346-87-13",
+      "birthDate": "2002-10-07",
+      "password": "Ang)12345",
+      "role": "customer",
+      "id": 2
+    },
+    {
+      "fullName": "Петров Сергей Викторович",
+      "nickname": "Admin_123",
+      "email": "admin@example.com",
+      "phone": "+375 (33) 346-87-14",
+      "birthDate": "1985-05-15",
+      "password": "Admin!2023",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "fullName": "Сидорова Елена Васильевна",
+      "nickname": "ElenaS_V_555",
+      "email": "sidorova@mail.ru",
+      "phone": "+375 (29) 111-22-33",
+      "birthDate": "1995-03-12",
+      "password": "Password123!",
+      "role": "customer",
+      "id": 4
+    },
+    {
+      "fullName": "Михайлов Дмитрий Олегович",
+      "nickname": "Dmitry_M_89",
+      "email": "mikhailov@ya.ru",
+      "phone": "+375 (44) 777-88-99",
+      "birthDate": "1989-11-20",
+      "password": "SecurePassword#1",
+      "role": "customer",
+      "id": 5
+    },
+    {
+      "fullName": "Козлова Ольга Андреевна",
+      "nickname": "Olga_Ko_21",
+      "email": "kozlova.o@gmail.com",
+      "phone": "+375 (25) 555-66-77",
+      "birthDate": "2001-07-01",
+      "password": "MyDoorIsCool1",
+      "role": "customer",
+      "id": 6
+    },
+    {
+      "fullName": "Новиков Артем Геннадьевич",
+      "nickname": "Artem_Nov_GG",
+      "email": "novikov.art@inbox.ru",
+      "phone": "+375 (33) 234-56-78",
+      "birthDate": "1998-02-15",
+      "password": "P@sswordForArtem",
+      "role": "customer",
+      "id": 7
+    },
+    {
+      "fullName": "Волкова Мария Сергеевна",
+      "nickname": "Maria_Wolf_16",
+      "email": "volkova.m@gmail.com",
+      "phone": "+375 (29) 987-65-43",
+      "birthDate": "1996-09-30",
+      "password": "StrongPass4Maria!",
+      "role": "customer",
+      "id": 8
+    },
+    {
+      "fullName": "Лебедев Павел Игоревич",
+      "nickname": "Pavel_Lebed_77",
+      "email": "lebedev.p@mail.ru",
+      "phone": "+375 (44) 123-12-34",
+      "birthDate": "1980-12-12",
+      "password": "12121980_Pass!",
+      "role": "customer",
+      "id": 9
+    },
+    {
+      "fullName": "Зайцева Ксения Денисовна",
+      "nickname": "Ksenia_Z_03",
+      "email": "zaiceva.ks@ya.ru",
+      "phone": "+375 (29) 567-89-01",
+      "birthDate": "2003-05-05",
+      "password": "KseniaPassword0505",
+      "role": "customer",
+      "id": 10
+    },
+    {
+      "fullName": "Яковлева Ангелина",
+      "nickname": "АнгелинаЯковлева_733",
+      "email": "ang@gmail.com",
+      "phone": "+375 (33) 346-87-74",
+      "birthDate": "2000-10-20",
+      "password": "*!e3E)Dsxa^j",
+      "role": "customer",
+      "id": 11
+    },
+    {
+      "fullName": "Миронова Милана",
+      "nickname": "МиланаМиронова_794",
+      "email": "mil@gmail.com",
+      "phone": "+375 (33) 346-87-35",
+      "birthDate": "2002-06-15",
+      "password": ")R3@#zI$P0oo",
+      "role": "customer",
+      "id": 12
+    },
+    {
+      "fullName": "Алина Далькова",
+      "nickname": "ДальковаАлина_424",
+      "email": "ili@gmail.com",
+      "phone": "+375 (33) 3464576",
+      "birthDate": "2000-05-23",
+      "password": "Pu2&z6$ZntM#",
+      "role": "customer",
+      "id": 13
     }
   ],
   "cart": [
     {
       "id": 1,
-      "userId": "2",
+      "userId": 1,
       "products": [
         {
           "productId": 1,
-          "quantity": 1
+          "quantity": 3
         },
         {
-          "productId": 5,
-          "quantity": 2
-        },
-        {
-          "productId": 8,
+          "productId": 2,
           "quantity": 1
-        },
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "products": [
         {
           "productId": 13,
           "quantity": 1
@@ -407,43 +639,73 @@
         {
           "productId": 22,
           "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "userId": "3",
-      "products": [
-        {
-          "productId": 2,
-          "quantity": 1
         },
         {
-          "productId": 6,
-          "quantity": 1
-        },
-        {
-          "productId": 7,
-          "quantity": 1
-        },
-        {
-          "productId": 14,
-          "quantity": 3
-        },
-        {
-          "productId": 18,
-          "quantity": 1
-        },
-        {
-          "productId": 25,
+          "productId": 8,
           "quantity": 1
         }
       ]
     },
     {
       "id": 3,
-      "userId": "4",
+      "userId": 4,
       "products": [
+        {
+          "productId": 21,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "products": [
+        {
+          "productId": 30,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "products": [
+        {
+          "productId": 18,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "userId": 4,
+      "products": [
+        {
+          "productId": 10,
+          "quantity": 1
+        },
+        {
+          "productId": 11,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "userId": 3,
+      "products": [],
+      "id": 7
+    },
+    {
+      "userId": 9,
+      "products": [
+        {
+          "productId": 2,
+          "quantity": 1
+        },
+        {
+          "productId": 1,
+          "quantity": 1
+        },
         {
           "productId": 3,
           "quantity": 1
@@ -455,50 +717,50 @@
         {
           "productId": 12,
           "quantity": 1
-        },
-        {
-          "productId": 19,
-          "quantity": 1
-        },
-        {
-          "productId": 23,
-          "quantity": 2
-        },
-        {
-          "productId": 26,
-          "quantity": 1
-        },
-        {
-          "productId": 30,
-          "quantity": 1
         }
-      ]
+      ],
+      "id": 8
     },
     {
-      "userId": "ALaZ0ZQ",
+      "userId": 11,
       "products": [
+        {
+          "productId": 4,
+          "quantity": 1
+        }
+      ],
+      "id": 9
+    },
+    {
+      "userId": 12,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        },
         {
           "productId": 2,
           "quantity": 1
         },
         {
-          "productId": 1,
+          "productId": 3,
+          "quantity": 1
+        },
+        {
+          "productId": 4,
+          "quantity": 1
+        },
+        {
+          "productId": 6,
+          "quantity": 1
+        },
+        {
+          "productId": 5,
           "quantity": 1
         }
       ],
-      "id": 4
+      "id": 10
     }
   ],
-  "commonPasswords": [
-    "123456",
-    "password",
-    "123456789",
-    "12345678",
-    "12345",
-    "111111",
-    "1234567",
-    "qwerty",
-    "123123",
-    "987654321"
-  ]
+  "commonPasswords": []
 }

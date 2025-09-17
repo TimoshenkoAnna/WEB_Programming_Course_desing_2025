@@ -1,0 +1,107 @@
+/* Стили для блока настроек в навигации */
+#nav-settings {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    margin-left: auto;
+}
+
+.nav-dropdown--simple {
+    position: relative;
+}
+
+/* Стили для выпадающих списков в #nav-settings */
+#nav-settings .dropdown-content {
+    top: 100%;
+    right: 0;
+    left: auto;
+    width: auto;
+    transform: none !important;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+    box-shadow: 0 4px 9px rgba(79, 89, 132, 0.12);
+}
+
+/* Стили для тёмной темы */
+body.theme-dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.theme-dark .site-header,
+body.theme-dark .header-nav,
+body.theme-dark .product-card,
+body.theme-dark .modal-content,
+body.theme-dark .goods-card,
+body.theme-dark .footer-logo,
+body.theme-dark .dropdown-content,
+body.theme-dark .cart-main,
+body.theme-dark .cart-container,
+body.theme-dark .cart-item,
+body.theme-dark .cart-summary {
+    background: #1e1e1e;
+    border-color: #333;
+}
+
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark .nav-link,
+body.theme-dark .phone-link,
+body.theme-dark .address p,
+body.theme-dark .address p strong,
+body.theme-dark a,
+body.theme-dark .goods-card strong,
+body.theme-dark .cart-item-details a,
+body.theme-dark .cart-item-price,
+body.theme-dark .cart-item-total,
+body.theme-dark .summary-total,
+body.theme-dark .cart-empty-message,
+body.theme-dark .cart-auth-message {
+    color: #e0e0e0;
+}
+
+body.theme-dark a:hover,
+body.theme-dark .address p strong:hover,
+body.theme-dark .cart-item-details a:hover {
+    color: #ad1d26;
+}
+
+body.theme-dark .slogan,
+body.theme-dark .phone-link strong i,
+body.theme-dark .copyright,
+body.theme-dark .contact-item strong {
+    color: #888;
+}
+
+body.theme-dark .contact-info,
+body.theme-dark .cart-container,
+body.theme-dark .cart-item,
+body.theme-dark .cart-summary {
+    background: #1e1e1e;
+}
+
+body.theme-dark .contact-text .link {
+    color: #e0e0e0;
+}
+
+body.theme-dark .map iframe {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+body.theme-dark .quantity-btn,
+body.theme-dark .checkout-btn,
+body.theme-dark .remove-item-btn {
+    background: #333;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+body.theme-dark .quantity-btn:hover,
+body.theme-dark .checkout-btn:hover,
+body.theme-dark .remove-item-btn:hover {
+    background: #444;
+    color: #fff;
+}
+
+body.theme-dark .quantity-value {
+    color: #e0e0e0;
+}
